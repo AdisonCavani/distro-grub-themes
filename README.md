@@ -44,6 +44,7 @@ In order to clone repository from Github you have to install `git` package <br>
 Alternatively you can download zip package - **Code -> Download ZIP**
 
 #### Clone the repository
+You can clone repository or go to [release page](https://github.com/AdisonCavani/distro-grub-themes/releases) and download a single theme
 ```
 git clone https://github.com/AdisonCavani/distro-grub-themes.git
 ```
@@ -98,6 +99,7 @@ In order to clone repository from Github you have to install `git` package <br>
 Alternatively you can download zip package - **Code -> Download ZIP**
 
 #### Clone the repository
+You can clone repository or go to [release page](https://github.com/AdisonCavani/distro-grub-themes/releases) and download a single theme
 ```
 git clone https://github.com/AdisonCavani/distro-grub-themes.git
 ```
@@ -113,6 +115,7 @@ cd distro-grub-themes/customize
 ```
 
 #### Copy theme
+Theme must be unpacked (in folder)
 ```
 sudo cp -r Ubuntu/ /boot/grub/themes
 ```
