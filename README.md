@@ -81,7 +81,7 @@ sudo eopkg install grub-customizer
 ### Install custom-made theme with Grub Customizer
 
 - Edit your theme located in `/customize` folder
-- Inside selected theme directory, select all files and **create archive** with .tar.xz extension
+- With your file manager, inside edited theme directory, select all files and **create archive** with .tar or .tar.xz extension
 - Open Grub Customizer
 - Go to **Appearance settings** tab
 - Select *Custom resolution* and type in your resolution. E.g: 1920x1080
