@@ -37,7 +37,7 @@ A pack of GRUB2 themes for each Linux distribution
 <img src="https://raw.githubusercontent.com/AdisonCavani/os-grub-themes/master/preview/Ubuntu.png" width="49%"/>
 </p>
 
-## Installation
+## Installation via Grub Customizer
 
 In order to clone repository from Github you have to install `git` package <br>
 Alternatively you can download zip package - **Code -> Download ZIP**
