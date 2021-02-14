@@ -39,6 +39,9 @@ A pack of GRUB2 themes for each Linux distribution
 
 ## Installation
 
+In order to clone repository from Github you have to install `git` package <br>
+Alternatively you can download zip package - **Code -> Download ZIP**
+
 Clone the repository
 ```
 git clone https://github.com/AdisonCavani/distro-grub-themes.git
@@ -66,3 +69,23 @@ Eopkg
 ```
 sudo eopkg install grub-customizer
 ```
+### Install pre-made theme with Grub Customizer
+
+- Open Grub Customizer
+- Go to **Appearance settings** tab
+- Select *Custom resolution* and type in your resolution. E.g: 1920x1080
+- Press *Add theme* button, go to your directory, where you have cloned repository. In my case `/home/adison/distro-grub-theme`
+- Select your theme located in `/themes` directory
+- Save changes
+
+### Install custom-made theme with Grub Customizer
+
+- Edit your theme located in `/customize` folder
+- Inside selected theme directory, select all files and **create archive** with .tar.xz extension
+- Open Grub Customizer
+- Go to **Appearance settings** tab
+- Select *Custom resolution* and type in your resolution. E.g: 1920x1080
+- Press *Add theme* button, go to your directory, where you have cloned repository. In my case `/home/adison/distro-grub-theme`
+- Change view settings from *Archive files* to **All files**
+- Select your archive
+- Save changes
