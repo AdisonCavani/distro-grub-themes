@@ -1,7 +1,8 @@
 # Distro Grub Themes
 
-A pack of GRUB2 themes for each Linux distribution
- 
+A pack of GRUB2 themes for different Linux distribution.<br>
+It aims to replace default Grub look, with nice and colorful theme.
+
 ## Supported distributions
 - Arch Linux
 - Debian
