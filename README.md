@@ -42,7 +42,7 @@ A pack of GRUB2 themes for each Linux distribution
 In order to clone repository from Github you have to install `git` package <br>
 Alternatively you can download zip package - **Code -> Download ZIP**
 
-Clone the repository
+#### Clone the repository
 ```
 git clone https://github.com/AdisonCavani/distro-grub-themes.git
 ```
@@ -89,3 +89,46 @@ sudo eopkg install grub-customizer
 - Change view settings from *Archive files* to **All files**
 - Select your archive
 - Save changes
+
+
+## Manual Installation
+
+In order to clone repository from Github you have to install `git` package <br>
+Alternatively you can download zip package - **Code -> Download ZIP**
+
+#### Clone the repository
+```
+git clone https://github.com/AdisonCavani/distro-grub-themes.git
+```
+
+#### Create themes directory
+```
+sudo mkdir /boot/grub/themes
+```
+
+#### Edit or use pre-made theme
+```
+cd distro-grub-themes/customize
+```
+
+#### Copy theme
+```
+sudo cp -r Ubuntu/ /boot/grub/themes
+```
+
+#### Edit Grub config
+You can use your favourite text editor
+```
+sudo nano /etc/default/grub
+```
+Uncomment this line and set your resolution:
+```
+GRUB_GFXMODE=1920x1080
+```
+
+At the end of file add theme path:
+```
+GRUB_THEME="/boot/grub/themes/Ubuntu/theme.txt"
+```
+Replace "Ubuntu" with selected theme<br>
+Ctrl+O to save, Ctrl+X to exit
