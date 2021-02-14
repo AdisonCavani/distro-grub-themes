@@ -136,3 +136,12 @@ GRUB_THEME="/boot/grub/themes/Ubuntu/theme.txt"
 ```
 Replace "Ubuntu" with selected theme<br>
 Ctrl+O to save, Ctrl+X to exit
+
+## To-do list
+Feature | Status
+------------ | -------------
+4K & 2K displays support | In dev
+Ultrawide display support | In future dev
+Gentoo theme | In dev
+KDE Neon theme | In dev
+Slackware theme | In dev
