@@ -36,3 +36,33 @@ A pack of GRUB2 themes for each Linux distribution
 <img src="https://raw.githubusercontent.com/AdisonCavani/os-grub-themes/master/preview/Solus.png" width="49%"/>
 <img src="https://raw.githubusercontent.com/AdisonCavani/os-grub-themes/master/preview/Ubuntu.png" width="49%"/>
 </p>
+
+## Installation
+
+Clone the repository
+```
+git clone https://github.com/AdisonCavani/distro-grub-themes.git
+```
+
+### Install Grub Customizer
+
+Apt
+```
+sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+sudo apt-get update
+sudo apt-get install grub-customizer
+```
+Pacman
+```
+sudo pacman -S grub-customizer
+```
+
+Dnf
+```
+sudo dnf install grub-customizer
+```
+
+Eopkg
+```
+sudo eopkg install grub-customizer
+```
