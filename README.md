@@ -16,6 +16,7 @@ It aims to replace default Grub look, with nice and colorful theme.
 - Pop! OS
 - Solus
 - Ubuntu
+- Ventoy
 
 ## Preview theme
 
