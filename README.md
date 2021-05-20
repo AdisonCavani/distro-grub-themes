@@ -88,7 +88,7 @@ sudo eopkg install grub-customizer
 - With your file manager, inside edited theme directory, select all files and **create archive** with .tar or .tar.xz extension
 - Open Grub Customizer
 - Go to **Appearance settings** tab
-- Select *Custom resolution* and type in your resolution. E.g: 1920x1080
+- Enable *Custom resolution* checkbox and select your resolution or type it in manually. E.g: 1920x1080
 - Press *Add theme* button, go to your directory, where you have cloned repository. In my case `/home/adison/distro-grub-theme`
 - Change view settings from *Archive files* to **All files**
 - Select your archive
