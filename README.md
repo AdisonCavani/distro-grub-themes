@@ -139,6 +139,19 @@ GRUB_THEME="/boot/grub/themes/Ubuntu/theme.txt"
 Replace "Ubuntu" with selected theme<br>
 Ctrl+O to save, Ctrl+X to exit
 
+## Instal theme in Ventoy
+Extract ```Ventoy.tar``` to ```/ventoy/theme``` directory
+
+Locate ```ventoy.json``` file in ```/plugin/ventoy/``` directory and change:
+```
+"file": "/ventoy/theme/blur/theme.txt",
+```
+to
+```
+"file": "/ventoy/theme/Ventoy/theme.txt",
+```
+For more informations head over to [Ventoy website](https://www.ventoy.net/en/plugin_theme.html)
+
 ## To-do list
 Feature | Status
 ------------ | -------------
