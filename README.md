@@ -155,8 +155,5 @@ For more informations head over to [Ventoy website](https://www.ventoy.net/en/pl
 ## To-do list
 Feature | Status
 ------------ | -------------
-4K & 2K displays support | In dev
-Ultrawide display support | In future dev
-Gentoo theme | In dev
-KDE Neon theme | In dev
-Slackware theme | In dev
+4K & 2K displays support | In the future
+Ultrawide display support | In the future
