@@ -166,7 +166,7 @@ cd distro-grub-themes/customize
 #### Copy theme
 Theme must be unpacked (in folder)
 ```
-sudo cp -r Ubuntu/ /boot/grub/themes
+sudo cp -r ubuntu/ /boot/grub/themes
 ```
 
 #### Edit Grub config
@@ -181,12 +181,27 @@ GRUB_GFXMODE=1920x1080
 
 At the end of file add theme path:
 ```
-GRUB_THEME="/boot/grub/themes/Ubuntu/theme.txt"
+GRUB_THEME="/boot/grub/themes/ubuntu/theme.txt"
 ```
-Replace "Ubuntu" with selected theme<br>
+Replace "ubuntu" with selected theme<br>
 Ctrl+O to save, Ctrl+X to exit
 
-## Instal theme in Ventoy
+#### Update Grub config
+You will need to tell Grub to update its configuration to include the new theme.
+
+Ubuntu and Debian-based systems:
+
+```
+sudo update-grub
+```
+
+Arch Linux:
+
+```
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+## Install theme in Ventoy
 Extract ```Ventoy.tar``` to ```/ventoy/theme``` directory
 
 Locate ```ventoy.json``` file in ```/plugin/ventoy/``` directory and change:
@@ -197,7 +212,7 @@ to
 ```
 "file": "/ventoy/theme/Ventoy/theme.txt",
 ```
-For more informations head over to [Ventoy website](https://www.ventoy.net/en/plugin_theme.html)
+For more information head over to [Ventoy website](https://www.ventoy.net/en/plugin_theme.html)
 
 ## To-do list
 Feature | Status
