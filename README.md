@@ -186,6 +186,21 @@ GRUB_THEME="/boot/grub/themes/ubuntu/theme.txt"
 Replace "ubuntu" with selected theme<br>
 Ctrl+O to save, Ctrl+X to exit
 
+#### Update Grub config
+You will need to tell Grub to update its configuration to include the new theme.
+
+Ubuntu and Debian-based systems:
+
+```
+sudo update-grub
+```
+
+Arch Linux:
+
+```
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+
 ## Instal theme in Ventoy
 Extract ```Ventoy.tar``` to ```/ventoy/theme``` directory
 
