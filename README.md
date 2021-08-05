@@ -195,7 +195,7 @@ Ubuntu and Debian-based systems:
 sudo update-grub
 ```
 
-Arch Linux:
+Other Linux distro:
 
 ```
 sudo grub-mkconfig -o /boot/grub/grub.cfg
