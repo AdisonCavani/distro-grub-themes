@@ -201,7 +201,7 @@ Arch Linux:
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-## Instal theme in Ventoy
+## Install theme in Ventoy
 Extract ```Ventoy.tar``` to ```/ventoy/theme``` directory
 
 Locate ```ventoy.json``` file in ```/plugin/ventoy/``` directory and change:
@@ -212,7 +212,7 @@ to
 ```
 "file": "/ventoy/theme/Ventoy/theme.txt",
 ```
-For more informations head over to [Ventoy website](https://www.ventoy.net/en/plugin_theme.html)
+For more information head over to [Ventoy website](https://www.ventoy.net/en/plugin_theme.html)
 
 ## To-do list
 Feature | Status
