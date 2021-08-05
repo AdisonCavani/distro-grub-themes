@@ -166,7 +166,7 @@ cd distro-grub-themes/customize
 #### Copy theme
 Theme must be unpacked (in folder)
 ```
-sudo cp -r Ubuntu/ /boot/grub/themes
+sudo cp -r ubuntu/ /boot/grub/themes
 ```
 
 #### Edit Grub config
@@ -181,9 +181,9 @@ GRUB_GFXMODE=1920x1080
 
 At the end of file add theme path:
 ```
-GRUB_THEME="/boot/grub/themes/Ubuntu/theme.txt"
+GRUB_THEME="/boot/grub/themes/ubuntu/theme.txt"
 ```
-Replace "Ubuntu" with selected theme<br>
+Replace "ubuntu" with selected theme<br>
 Ctrl+O to save, Ctrl+X to exit
 
 ## Instal theme in Ventoy
