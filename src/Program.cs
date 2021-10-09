@@ -33,10 +33,6 @@ namespace DistroGrubThemes
             {
                 Console.Write("Creating " + directory.Value + ".tar archive ... ");
                 ArchiveManager.CreateTarArchive(directory.Key, path + @"\themes\" + directory.Value + ".tar");
-
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.Write("OK\n");
-                Console.ResetColor();
             }
         }
 
