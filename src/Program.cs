@@ -1,6 +1,7 @@
 ﻿using CommandLine;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 
@@ -18,8 +19,25 @@ namespace DistroGrubThemes
         static void RunOptions(ProgramOptions opts)
         {
             Program program = new Program();
+
             string path = program.CheckRepoPath(opts.RepositoryPath);
+
             program.UpdateAssets(path);
+            Console.WriteLine();
+            program.UpdateArchive(path);
+        }
+
+        void UpdateArchive(string path)
+        {
+            foreach (var directory in DirectoriesDictionary(path + @"\customize", path))
+            {
+                Console.Write("Creating " + directory.Value + ".tar archive ... ");
+                ArchiveManager.CreateTarArchive(directory.Key, path + @"\themes\" + directory.Value + ".tar");
+
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.Write("OK\n");
+                Console.ResetColor();
+            }
         }
 
         void UpdateAssets(string path)
@@ -33,7 +51,7 @@ namespace DistroGrubThemes
             Console.Write("\nUpdating icons ... ");
             var icons = FilesArray(iconsPath);
 
-            foreach (var directory in CustomDirectories(customizePath))
+            foreach (var directory in DirectoriesArray(customizePath))
             {
                 foreach (var icon in icons)
                 {
@@ -51,7 +69,7 @@ namespace DistroGrubThemes
             Console.Write("Updating fonts ... ");
             var fonts = FilesArray(fontsPath);
 
-            foreach (var directory in CustomDirectories(customizePath))
+            foreach (var directory in DirectoriesArray(customizePath))
             {
                 foreach (var font in fonts)
                 {
@@ -69,9 +87,16 @@ namespace DistroGrubThemes
             return new List<string>(Directory.GetFiles(folderPath).Select(Path.GetFileName));
         }
 
-        string[] CustomDirectories(string customizePath)
+        string[] DirectoriesArray(string directoryPath)
         {
-            return Directory.GetDirectories(customizePath);
+            return Directory.GetDirectories(directoryPath);
+        }
+
+        Dictionary<string, string> DirectoriesDictionary(string directoryPath, string repoPath)
+        {
+            var dirsArray = Directory.GetDirectories(directoryPath);
+
+            return dirsArray.ToDictionary(key => key, value => value.Substring(value.IndexOf(@"customize\") + 10));
         }
 
         string CheckRepoPath(string path)
