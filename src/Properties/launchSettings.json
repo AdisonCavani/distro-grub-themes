@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "DistroGrubThemes": {
-      "commandName": "Project",
-      "commandLineArgs": "\"-rC:\\Users\\Adison\\repos\\distro-grub-themes\""
-    }
-  }
-}
