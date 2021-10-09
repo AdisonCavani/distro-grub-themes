@@ -4,7 +4,7 @@ namespace DistroGrubThemes
 {
     public class ArchiveManager
     {
-        public static void CreateTarArchive(string sourceDirectory, string outputFile)
+        public static void CreateTarArchive(string sourceDirectory, string outputFile, bool verbose)
         {
             Chilkat.Tar tar = new Chilkat.Tar
             {
@@ -35,9 +35,12 @@ namespace DistroGrubThemes
                 return;
             }
 
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write("OK\n");
-            Console.ResetColor();
+            if (verbose)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.Write("OK\n");
+                Console.ResetColor();
+            }
         }
     }
 }

@@ -1,7 +1,6 @@
 ﻿using CommandLine;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 
@@ -19,63 +18,111 @@ namespace DistroGrubThemes
         static void RunOptions(ProgramOptions opts)
         {
             Program program = new Program();
-
             string path = program.CheckRepoPath(opts.RepositoryPath);
 
-            program.UpdateAssets(path);
-            Console.WriteLine();
-            program.UpdateArchive(path);
+            if (opts.UpdateFonts)
+            {
+                program.UpdateFonts(path + @"\font", path + @"\customize", opts.VerboseMode);
+            }
+
+            if (opts.UpdateIcons)
+            {
+                if (opts.VerboseMode)
+                    Console.WriteLine();
+
+                program.UpdateIcons(path + @"\assets\icons", path + @"\customize", opts.VerboseMode);
+            }
+
+            if (opts.UpdateArchives)
+            {
+                if (opts.VerboseMode)
+                    Console.WriteLine();
+
+                program.UpdateArchive(path, opts.VerboseMode);
+            }
         }
 
-        void UpdateArchive(string path)
+        void UpdateArchive(string path, bool verbose)
         {
+            if (!verbose)
+                Console.Write("Creating .tar archives ... ");
+
             foreach (var directory in DirectoriesDictionary(path + @"\customize", path))
             {
-                Console.Write("Creating " + directory.Value + ".tar archive ... ");
-                ArchiveManager.CreateTarArchive(directory.Key, path + @"\themes\" + directory.Value + ".tar");
+                if (verbose)
+                    Console.Write("Creating " + directory.Value + ".tar archive ... ");
+
+                ArchiveManager.CreateTarArchive(directory.Key, path + @"\themes\" + directory.Value + ".tar", verbose);
+            }
+
+            if (!verbose)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.Write("OK\n");
+                Console.ResetColor();
             }
         }
 
-        void UpdateAssets(string path)
+        void UpdateIcons(string iconsPath, string customizePath, bool verbose)
         {
-            UpdateIcons(path + @"\assets\icons", path + @"\customize");
-            UpdateFonts(path + @"\font", path + @"\customize");
-        }
-
-        void UpdateIcons(string iconsPath, string customizePath)
-        {
-            Console.Write("\nUpdating icons ... ");
-            var icons = FilesArray(iconsPath);
+            if (!verbose)
+                Console.Write("Copying icons ... ");
 
             foreach (var directory in DirectoriesArray(customizePath))
             {
-                foreach (var icon in icons)
+                foreach (var icon in FilesArray(iconsPath))
                 {
+                    if (verbose)
+                        Console.Write("Copying " + icon + " ... ");
+
                     File.Copy(iconsPath + @"\" + icon, directory + @"\icons\" + icon, true);
+
+                    if (verbose)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.Write("OK\n");
+                        Console.ResetColor();
+                    }
                 }
             }
 
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write("OK\n");
-            Console.ResetColor();
+            if (!verbose)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.Write("OK\n");
+                Console.ResetColor();
+            }
         }
 
-        void UpdateFonts(string fontsPath, string customizePath)
+        void UpdateFonts(string fontsPath, string customizePath, bool verbose)
         {
-            Console.Write("Updating fonts ... ");
-            var fonts = FilesArray(fontsPath);
+            if (!verbose)
+                Console.Write("Copying fonts ... ");
 
             foreach (var directory in DirectoriesArray(customizePath))
             {
-                foreach (var font in fonts)
+                foreach (var font in FilesArray(fontsPath))
                 {
+                    if (verbose)
+                        Console.Write("Copying " + font + " ... ");
+
                     File.Copy(fontsPath + @"\" + font, directory + @"\" + font, true);
+
+                    if (verbose)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.Write("OK\n");
+                        Console.ResetColor();
+                    }
                 }
             }
 
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write("OK\n");
-            Console.ResetColor();
+            if (!verbose)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.Write("OK\n");
+                Console.ResetColor();
+            }
         }
 
         List<string> FilesArray(string folderPath)
