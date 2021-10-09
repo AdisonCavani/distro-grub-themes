@@ -12,18 +12,15 @@ namespace DistroGrubThemes
         {
             var parser = new Parser(with => with.HelpWriter = null);
             var parserResult = parser.ParseArguments<ProgramOptions>(args);
-
             parserResult.WithParsed(options => RunOptions(options)).WithNotParsed(errs => Help.DisplayHelp(parserResult, errs));
         }
 
         static void RunOptions(ProgramOptions opts)
         {
             Program program = new Program();
-            program.CheckRepoPath(opts.RepositoryPath);
-            program.UpdateAssets(opts.RepositoryPath);
+            string path = program.CheckRepoPath(opts.RepositoryPath);
+            program.UpdateAssets(path);
         }
-
-
 
         void UpdateAssets(string path)
         {
@@ -33,7 +30,7 @@ namespace DistroGrubThemes
 
         void UpdateIcons(string iconsPath, string customizePath)
         {
-            Console.Write("Updating icons ... ");
+            Console.Write("\nUpdating icons ... ");
             var icons = FilesArray(iconsPath);
 
             foreach (var directory in CustomDirectories(customizePath))
@@ -77,12 +74,12 @@ namespace DistroGrubThemes
             return Directory.GetDirectories(customizePath);
         }
 
-        void CheckRepoPath(string path)
+        string CheckRepoPath(string path)
         {
             if (Directory.Exists(path) && path.Contains("distro-grub-themes"))
             {
                 int index = path.IndexOf("distro-grub-themes") + 18;
-                path = path.Substring(0, index);
+                return path.Substring(0, index);
             }
 
             else
@@ -92,6 +89,7 @@ namespace DistroGrubThemes
                 Console.ResetColor();
                 Console.Write("could not find repository in this path");
                 Environment.Exit(1);
+                return null;
             }
         }
     }
