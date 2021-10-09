@@ -1,90 +1,70 @@
-﻿using System;
+﻿using CommandLine;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using CommandLine;
 
 namespace DistroGrubThemes
 {
-
     internal class Program
     {
-        string repoPath = string.Empty;
-        string iconsPath = string.Empty;
-        string customizePath = string.Empty;
-        string fontsPath = string.Empty;
-
         static void Main(string[] args)
         {
-            Parser.Default.ParseArguments<ProgramOptions>(args).WithParsed(RunOptions).WithNotParsed(HandleParseError);
+            var parser = new Parser(with => with.HelpWriter = null);
+            var parserResult = parser.ParseArguments<ProgramOptions>(args);
+
+            parserResult.WithParsed(options => RunOptions(options)).WithNotParsed(errs => Help.DisplayHelp(parserResult, errs));
         }
 
         static void RunOptions(ProgramOptions opts)
         {
             Program program = new Program();
-
-            if (string.IsNullOrWhiteSpace(opts.ArchivedFiles))
-            {
-                program.UpdateAssets();
-            }
-
-            else if(opts.ArchivedFiles == "all")
-            {
-                Console.WriteLine("Correct");
-            }
-
-            else
-            {
-                Console.WriteLine("DistroGrubThemes 1.0.0");
-                Console.WriteLine("Copyright (C) 2021 Adison Cavani\n");
-                Console.WriteLine("ERROR(S): ");
-                Console.WriteLine($"  Argument {opts.ArchivedFiles} is unknown.");
-                Console.WriteLine("\n  -a, --archive\tTest\n");
-            }
+            program.CheckRepoPath(opts.RepositoryPath);
+            program.UpdateAssets(opts.RepositoryPath);
         }
 
-        static void HandleParseError(IEnumerable<Error> errs)
+
+
+        void UpdateAssets(string path)
         {
-            Environment.Exit(1);
+            UpdateIcons(path + @"\assets\icons", path + @"\customize");
+            UpdateFonts(path + @"\font", path + @"\customize");
         }
 
-        void UpdateAssets()
+        void UpdateIcons(string iconsPath, string customizePath)
         {
-            Console.Write("Repository path: ");
-            CheckRepoPath(Console.ReadLine());
-
-            iconsPath = repoPath + @"\assets\icons";
-            customizePath = repoPath + @"\customize";
-            fontsPath = repoPath + @"\font";
-
-            UpdateIcons();
-            UpdateFonts();
-        }
-
-        void UpdateIcons()
-        {
+            Console.Write("Updating icons ... ");
             var icons = FilesArray(iconsPath);
 
-            foreach (var directory in CustomDirectories())
+            foreach (var directory in CustomDirectories(customizePath))
             {
                 foreach (var icon in icons)
                 {
                     File.Copy(iconsPath + @"\" + icon, directory + @"\icons\" + icon, true);
                 }
             }
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("OK\n");
+            Console.ResetColor();
         }
 
-        void UpdateFonts()
+        void UpdateFonts(string fontsPath, string customizePath)
         {
+            Console.Write("Updating fonts ... ");
             var fonts = FilesArray(fontsPath);
 
-            foreach (var directory in CustomDirectories())
+            foreach (var directory in CustomDirectories(customizePath))
             {
                 foreach (var font in fonts)
                 {
                     File.Copy(fontsPath + @"\" + font, directory + @"\" + font, true);
                 }
             }
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("OK\n");
+            Console.ResetColor();
         }
 
         List<string> FilesArray(string folderPath)
@@ -92,7 +72,7 @@ namespace DistroGrubThemes
             return new List<string>(Directory.GetFiles(folderPath).Select(Path.GetFileName));
         }
 
-        string[] CustomDirectories()
+        string[] CustomDirectories(string customizePath)
         {
             return Directory.GetDirectories(customizePath);
         }
@@ -102,14 +82,15 @@ namespace DistroGrubThemes
             if (Directory.Exists(path) && path.Contains("distro-grub-themes"))
             {
                 int index = path.IndexOf("distro-grub-themes") + 18;
-                repoPath = path.Substring(0, index);
+                path = path.Substring(0, index);
             }
 
             else
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("ERROR: Could not find repository in this path!");
+                Console.Write("error: ");
                 Console.ResetColor();
+                Console.Write("could not find repository in this path");
                 Environment.Exit(1);
             }
         }
