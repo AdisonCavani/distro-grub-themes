@@ -12,7 +12,7 @@ namespace DistroGrubThemes
             };
 
             // Add a directory tree to be included in the output TAR archive:
-            bool success = tar.AddDirRoot(sourceDirectory + "xxd");
+            bool success = tar.AddDirRoot(sourceDirectory);
             if (success != true)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
