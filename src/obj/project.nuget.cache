@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "EFQj79zBatn2G/DjQrKpneAgO4U+UyxjBu8g0xxI6D4mt9u9ST/y4DY1pldywB4ZlulDJUCwCsydRgspdpt8/Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Adison\\repos\\distro-grub-themes\\src\\DistroGrubThemes.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Adison\\.nuget\\packages\\commandlineparser\\2.8.0\\commandlineparser.2.8.0.nupkg.sha512",
+    "C:\\Users\\Adison\\.nuget\\packages\\sharpziplib\\1.3.3\\sharpziplib.1.3.3.nupkg.sha512"
+  ],
+  "logs": []
+}
