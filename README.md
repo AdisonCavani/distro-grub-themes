@@ -31,6 +31,14 @@ It aims to replace default Grub look, with nice and colorful theme.
 - Windows 10
 - Zorin OS
 
+## Supported Vendors
+- Hewlett-Packard
+- Toshiba
+- Gigabyte
+- Gigabyte-Aorus
+- Asus
+- Lenovo
+
 ## Preview theme
 
 <p float="left">
