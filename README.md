@@ -93,7 +93,24 @@ It aims to replace default Grub look, with nice and colorful theme.
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/ZorinOS.png" width="49%"/>
 </p>
 
-
+<p float="left">
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/HP.png" width="49%"/>
+</p>
+<p float="left">
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Toshiba.png" width="49%"/>
+</p>
+<p float="left">
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/gigabyte.png" width="49%"/>
+</p>
+<p float="left">
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/aorus.png" width="49%"/>
+</p>
+<p float="left">
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Asus.png" width="49%"/>
+</p>
+<p float="left">
+<img src="https://github.com/AdisonCavani/distro-grub-themes/blob/master/preview/Lenovo.png" width="49%"/>
+</p>
 
 ## Installation via Grub Customizer
 
