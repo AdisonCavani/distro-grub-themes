@@ -5,6 +5,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <Authors>Adison Cavani</Authors>
     <Company>Adison Cavani</Company>
+    <LangVersion>10</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
