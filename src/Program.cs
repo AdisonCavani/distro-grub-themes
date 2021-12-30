@@ -21,16 +21,14 @@ namespace DistroGrubThemes
             string path = program.CheckRepoPath(opts.RepositoryPath);
 
             if (opts.UpdateFonts)
-            {
-                program.UpdateFonts(path + @"\font", path + @"\customize", opts.VerboseMode);
-            }
+                program.UpdateFonts($"{path}\\font", $"{path}\\customize", opts.VerboseMode);
 
             if (opts.UpdateIcons)
             {
                 if (opts.VerboseMode)
                     Console.WriteLine();
 
-                program.UpdateIcons(path + @"\assets\icons", path + @"\customize", opts.VerboseMode);
+                program.UpdateIcons($"{path}\\assets\\icons", $"{path}\\customize", opts.VerboseMode);
             }
 
             if (opts.UpdateArchives)
@@ -47,12 +45,12 @@ namespace DistroGrubThemes
             if (!verbose)
                 Console.Write("Creating .tar archives ... ");
 
-            foreach (var directory in DirectoriesDictionary(path + @"\customize", path))
+            foreach (var directory in DirectoriesDictionary($"{path}\\customize", path))
             {
                 if (verbose)
-                    Console.Write("Creating " + directory.Value + ".tar archive ... ");
+                    Console.Write($"Creating {directory.Value}.tar archive ... ");
 
-                ArchiveManager.CreateTarArchive(directory.Key, path + @"\themes\" + directory.Value + ".tar", verbose);
+                ArchiveManager.CreateTarArchive($"{path}\\themes\\{directory.Value}.tar", verbose);
             }
 
             if (!verbose)
@@ -73,9 +71,9 @@ namespace DistroGrubThemes
                 foreach (var icon in FilesArray(iconsPath))
                 {
                     if (verbose)
-                        Console.Write("Copying " + icon + " ... ");
+                        Console.Write($"Copying {icon} ... ");
 
-                    File.Copy(iconsPath + @"\" + icon, directory + @"\icons\" + icon, true);
+                    File.Copy($"{iconsPath}\\{icon}", $"{directory}\\icons\\{icon}", true);
 
                     if (verbose)
                     {
@@ -104,9 +102,9 @@ namespace DistroGrubThemes
                 foreach (var font in FilesArray(fontsPath))
                 {
                     if (verbose)
-                        Console.Write("Copying " + font + " ... ");
+                        Console.Write($"Copying {font} ... ");
 
-                    File.Copy(fontsPath + @"\" + font, directory + @"\" + font, true);
+                    File.Copy($"{fontsPath}\\{font}", $"{directory}\\{font}", true);
 
                     if (verbose)
                     {
@@ -139,7 +137,7 @@ namespace DistroGrubThemes
         {
             var dirsArray = Directory.GetDirectories(directoryPath);
 
-            return dirsArray.ToDictionary(key => key, value => value.Substring(value.IndexOf(@"customize\") + 10));
+            return dirsArray.ToDictionary(key => key, value => value[(value.IndexOf(@"customize\") + 10)..]);
         }
 
         string CheckRepoPath(string path)
@@ -147,7 +145,7 @@ namespace DistroGrubThemes
             if (Directory.Exists(path) && path.Contains("distro-grub-themes"))
             {
                 int index = path.IndexOf("distro-grub-themes") + 18;
-                return path.Substring(0, index);
+                return path[..index];
             }
 
             else
