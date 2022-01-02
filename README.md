@@ -26,6 +26,7 @@ It aims to replace default Grub look, with nice and colorful theme.
 - Rocky Linux
 - Solus
 - Ubuntu
+- Ubuntu Mate
 - Ventoy
 - Void Linux
 - Windows 10
@@ -83,13 +84,14 @@ It aims to replace default Grub look, with nice and colorful theme.
 </p>
 <p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Ubuntu.png" width="49%"/>
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/UbuntuMate.png" width="49%"/>
+</p>
+<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Void%20Linux.png" width="49%"/>
-</p>
-<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Ventoy.png" width="49%"/>
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Windows%2010.png" width="49%"/>
 </p>
 <p float="left">
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Windows%2010.png" width="49%"/>
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/ZorinOS.png" width="49%"/>
 </p>
 
