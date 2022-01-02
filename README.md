@@ -32,7 +32,7 @@ It aims to replace default Grub look, with nice and colorful theme.
 - Zorin OS
 
 ## Supported Vendors
-- Hewlett-Packard
+- HP
 - Toshiba
 - Gigabyte
 - Gigabyte-Aorus
