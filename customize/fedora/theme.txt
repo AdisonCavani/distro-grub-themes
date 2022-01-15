@@ -17,7 +17,7 @@ terminal-border: "0"
 + boot_menu {
   left = 15%
   top = 40%
-  width = 27%
+  width = 60%
   height = 65%
   item_font = "Ubuntu Regular 20"
   item_color = "#cccccc"
