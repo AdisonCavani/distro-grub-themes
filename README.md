@@ -30,6 +30,7 @@ It aims to replace default Grub look, with nice and colorful theme.
 - Ventoy
 - Void Linux
 - Windows 10
+- Windows 11
 - Zorin OS
 
 ## Supported Vendors
@@ -92,6 +93,9 @@ It aims to replace default Grub look, with nice and colorful theme.
 </p>
 <p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Windows%2010.png" width="49%"/>
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Windows%2011.png" width="49%"/>
+</p>
+<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/ZorinOS.png" width="49%"/>
 </p>
 
