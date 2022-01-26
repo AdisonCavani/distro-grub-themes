@@ -41,6 +41,7 @@ It aims to replace default Grub look, with nice and colorful theme.
 - Gigabyte
 - HP
 - Lenovo
+- System76
 - Toshiba
 
 ## Preview theme
@@ -116,6 +117,9 @@ It aims to replace default Grub look, with nice and colorful theme.
 </p>
 <p float="left">
 <img src="https://github.com/AdisonCavani/distro-grub-themes/blob/master/preview/Lenovo.png" width="49%"/>
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/System76.png" width="49%"/>
+</p>
+<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Toshiba.png" width="49%"/>
 </p>
 
