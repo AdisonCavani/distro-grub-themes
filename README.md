@@ -7,7 +7,7 @@ It aims to replace default Grub look, with nice and colorful theme.
 ## Supported distributions
 - Arch Linux
 - Arco Linux
-- Antix Linux
+- Artix Linux
 - CentOS
 - Debian
 - Deepin
@@ -34,12 +34,14 @@ It aims to replace default Grub look, with nice and colorful theme.
 - Zorin OS
 
 ## Supported Vendors
-- HP
-- Toshiba
-- Gigabyte
-- Gigabyte-Aorus
+- Acer
+- Aorus
 - Asus
+- Dell
+- Gigabyte
+- HP
 - Lenovo
+- Toshiba
 
 ## Preview theme
 
