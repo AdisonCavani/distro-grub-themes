@@ -2,7 +2,7 @@ name: Update changes on commit
 
 on:
   push:
-    branches: [ actions ]
+    branches: [ master ]
     paths:
     - 'assets/icons'
     - 'customize/**'
