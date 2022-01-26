@@ -78,8 +78,8 @@ It aims to replace default Grub look, with nice and colorful theme.
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/MX%20Linux.png" width="49%"/>
 </p>
 <p float="left">
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/openSUSE.png" width="49%"/>
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/popOS.png" width="49%"/>
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/OpenSUSE.png" width="49%"/>
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/PopOS.png" width="49%"/>
 </p>
 <p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Rocky%20Linux.png" width="49%"/>
@@ -103,16 +103,20 @@ It aims to replace default Grub look, with nice and colorful theme.
 
 ### Vendor Themes
 <p float="left">
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/HP.png" width="49%"/>
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Toshiba.png" width="49%"/>
-</p>
-<p float="left">
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/gigabyte.png" width="49%"/>
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/aorus.png" width="49%"/>
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Acer.png" width="49%"/>
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Aorus.png" width="49%"/>
 </p>
 <p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Asus.png" width="49%"/>
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Dell.png" width="49%"/>
+</p>
+<p float="left">
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Gigabyte.png" width="49%"/>
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/HP.png" width="49%"/>
+</p>
+<p float="left">
 <img src="https://github.com/AdisonCavani/distro-grub-themes/blob/master/preview/Lenovo.png" width="49%"/>
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Toshiba.png" width="49%"/>
 </p>
 
 ## Installation via Grub Customizer
