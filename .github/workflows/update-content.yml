@@ -1,0 +1,30 @@
+name: Update changes on commit
+
+on:
+  push:
+    branches: [ actions ]
+    paths:
+    - 'assets/icons'
+    - 'customize/**'
+    - 'font'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@master
+    - name: 🌵 Update icons
+      run:  |
+        for dest in customize/* ; do cp -rv assets/icons "$dest"; done
+    - name: 🦬 Update fonts
+      run:  |
+        for dest in customize/* ; do cp -rva font/. "$dest"; done
+    - name: 🔥 Commit changes
+      run:  |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git fetch
+        git add .
+        git commit -m "🤖 Update files"
+        git push
