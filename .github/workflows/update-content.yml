@@ -14,12 +14,16 @@ jobs:
     
     steps:
     - uses: actions/checkout@master
-    - name: 🌵 Update icons
+    - name: 🖼️	Update icons
       run:  |
         for dest in customize/* ; do cp -rv assets/icons "$dest"; done
-    - name: 🦬 Update fonts
+    - name: 📇 Update fonts
       run:  |
         for dest in customize/* ; do cp -rva font/. "$dest"; done
+    - name: 💼 Update archives
+      run:  |
+        cd customize;
+        for dest in * ; do find "$dest" -printf "%P\n" | tar -vcf ../themes/"$dest".tar --no-recursion -C "$dest" -T -; done
     - name: 🔥 Commit changes
       run:  |
         git config user.name github-actions
