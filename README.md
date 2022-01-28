@@ -1,6 +1,8 @@
 # Distro Grub Themes
 [![name](https://img.shields.io/github/license/AdisonCavani/distro-grub-themes)](https://github.com/AdisonCavani/distro-grub-themes/blob/master/LICENSE)
-[![name](https://img.shields.io/github/v/release/AdisonCavani/distro-grub-themes)](https://github.com/AdisonCavani/distro-grub-themes/releases)<br>
+[![name](https://img.shields.io/github/v/release/AdisonCavani/distro-grub-themes)](https://github.com/AdisonCavani/distro-grub-themes/releases)
+[![Build](https://github.com/AdisonCavani/distro-grub-themes/actions/workflows/update-content.yml/badge.svg?event=push)](https://github.com/AdisonCavani/distro-grub-themes/actions/workflows/update-content.yml)<br>
+
 A pack of GRUB2 themes for different Linux distribution and OS.<br>
 It aims to replace default Grub look, with nice and colorful theme.
 
