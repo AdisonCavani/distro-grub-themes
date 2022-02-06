@@ -39,6 +39,7 @@ It aims to replace default Grub look, with nice and colorful theme.
 - Acer
 - Aorus
 - Asus
+- ASRock
 - Dell
 - Gigabyte
 - HP
@@ -112,18 +113,21 @@ It aims to replace default Grub look, with nice and colorful theme.
 </p>
 <p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Asus.png" width="49%"/>
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/ASRock.png" width="49%"/>
+</p>
+<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Dell.png" width="49%"/>
-</p>
-<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Gigabyte.png" width="49%"/>
+</p>
+<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/HP.png" width="49%"/>
-</p>
-<p float="left">
 <img src="https://github.com/AdisonCavani/distro-grub-themes/blob/master/preview/Lenovo.png" width="49%"/>
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/MSI.png" width="49%"/>
 </p>
 <p float="left">
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/MSI.png" width="49%"/>
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/System76.png" width="49%"/>
+</p>
+<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Toshiba.png" width="49%"/>
 </p>
 
