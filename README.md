@@ -15,7 +15,6 @@ It aims to replace default Grub look, with nice and colorful theme.
 - Deepin
 - ElementaryOS
 - EndeavourOS
-- Fedora
 - FreeBSD
 - Garuda
 - Gentoo
@@ -67,42 +66,39 @@ It aims to replace default Grub look, with nice and colorful theme.
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/EndeavourOS.png" width="49%"/>
 </p>
 <p float="left">
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Fedora.png" width="49%"/>
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/FreeBSD.png" width="49%"/>
-</p>
-<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Garuda.png" width="49%"/>
+</p>
+<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Gentoo.png" width="49%"/>
-</p>
-<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/KDEneon.png" width="49%"/>
+</p>
+<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Linux%20Mint.png" width="49%"/>
-</p>
-<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Manjaro.png" width="49%"/>
+</p>
+<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/MX%20Linux.png" width="49%"/>
-</p>
-<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/OpenSUSE.png" width="49%"/>
+</p>
+<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/PopOS.png" width="49%"/>
-</p>
-<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Rocky%20Linux.png" width="49%"/>
+</p>
+<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Solus.png" width="49%"/>
-</p>
-<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Ubuntu.png" width="49%"/>
+</p>
+<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/UbuntuMate.png" width="49%"/>
-</p>
-<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Void%20Linux.png" width="49%"/>
+</p>
+<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Ventoy.png" width="49%"/>
-</p>
-<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Windows%2010.png" width="49%"/>
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Windows%2011.png" width="49%"/>
 </p>
 <p float="left">
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Windows%2011.png" width="49%"/>
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/ZorinOS.png" width="49%"/>
 </p>
 
@@ -153,11 +149,6 @@ sudo apt-get install grub-customizer
 Pacman
 ```
 sudo pacman -S grub-customizer
-```
-
-Dnf
-```
-sudo dnf install grub-customizer
 ```
 
 Eopkg
