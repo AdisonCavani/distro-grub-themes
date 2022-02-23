@@ -8,17 +8,20 @@ It aims to replace default Grub look, with nice and colorful theme.
 
 
 ## Get started
- - [Supported distributions](#supported-distributions)
- - [Supported vendors](#supported-vendors)
+ - [Themes](#themes)
+   * [Supported distributions](#supported-distributions)
+   * [Supported vendors](#supported-vendors)
  - [Preview theme](#preview-theme)
    * [Distro themes](#distro-themes)
    * [Vendor themes](#vendor-themes)
 
- - [Installation via Grub Customizer](#installation-via-grub-customizer)
- - [Manual Installation](#manual-installation)
- - [Install theme in Ventoy](#install-theme-in-ventoy)
+ - [Installation](#installation)
+   * [Installation via Grub Customizer](#installation-via-grub-customizer)
+   * [Manual Installation](#manual-installation)
+   * [Install theme in Ventoy](#install-theme-in-ventoy)
  - [To-do list](#to-do-list)
 
+# Themes
 ## Supported distributions
 - Arch Linux
 - Arco Linux
@@ -141,6 +144,7 @@ It aims to replace default Grub look, with nice and colorful theme.
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Toshiba.png" width="49%"/>
 </p>
 
+# Installation
 ## Installation via Grub Customizer
 
 In order to clone repository from Github you have to install `git` package <br>
@@ -263,7 +267,7 @@ to
 ```
 For more information head over to [Ventoy website](https://www.ventoy.net/en/plugin_theme.html)
 
-## To-do list
+# To-do list
 Feature | Status
 ------------ | -------------
 4K & 2K displays support | In the future
