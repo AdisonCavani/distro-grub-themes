@@ -6,6 +6,19 @@
 A pack of GRUB2 themes for different Linux distribution and OS.<br>
 It aims to replace default Grub look, with nice and colorful theme.
 
+
+## Get started
+ - [Supported distributions](#supported-distributions)
+ - [Supported vendors](#supported-vendors)
+ - [Preview theme](#preview-theme)
+   * [Distro themes](#distro-themes)
+   * [Vendor themes](#vendor-themes)
+
+ - [Installation via Grub Customizer](#installation-via-grub-customizer)
+ - [Manual Installation](#manual-installation)
+ - [Install theme in Ventoy](#install-theme-in-ventoy)
+ - [To-do list](#to-do-list)
+
 ## Supported distributions
 - Arch Linux
 - Arco Linux
@@ -34,7 +47,7 @@ It aims to replace default Grub look, with nice and colorful theme.
 - Windows 11
 - Zorin OS
 
-## Supported Vendors
+## Supported vendors
 - Acer
 - Aorus
 - Asus
@@ -48,6 +61,7 @@ It aims to replace default Grub look, with nice and colorful theme.
 - Toshiba
 
 ## Preview theme
+### Distro themes
 
 <p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/grub-theme/master/preview/Arch%20Linux.png" width="49%"/>
@@ -102,7 +116,7 @@ It aims to replace default Grub look, with nice and colorful theme.
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/ZorinOS.png" width="49%"/>
 </p>
 
-### Vendor Themes
+### Vendor themes
 <p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Acer.png" width="49%"/>
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Aorus.png" width="49%"/>
