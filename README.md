@@ -134,7 +134,7 @@ It aims to replace default Grub look, with nice and colorful theme.
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Aorus.png" width="49%"/>
 </p>
 <p float="left">
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Aorus.png" width="49%"/>
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Apple.png" width="49%"/>
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Asus.png" width="49%"/>
 </p>
 <p float="left">
