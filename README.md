@@ -146,9 +146,10 @@ It aims to replace default Grub look, with nice and colorful theme.
 </p>
 <p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/MSI.png" width="49%"/>
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/System76.png" width="49%"/>
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Razer.png" width="49%"/>
 </p>
 <p float="left">
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/System76.png" width="49%"/>
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Toshiba.png" width="49%"/>
 </p>
 
