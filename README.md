@@ -45,6 +45,7 @@ It aims to replace default Grub look, with nice and colorful theme.
 - openSUSE
 - Pop! OS
 - Rocky Linux
+- Slackware
 - Solus
 - Ubuntu
 - Ubuntu Mate
@@ -52,6 +53,7 @@ It aims to replace default Grub look, with nice and colorful theme.
 - Void Linux
 - Windows 10
 - Windows 11
+- Xero Linux
 - Zorin OS
 
 ## Supported vendors
@@ -62,6 +64,7 @@ It aims to replace default Grub look, with nice and colorful theme.
 - Asus
 - ASRock
 - Dell
+- Framework
 - Gigabyte
 - HP
 - Lenovo
@@ -111,19 +114,23 @@ It aims to replace default Grub look, with nice and colorful theme.
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Rocky%20Linux.png" width="49%"/>
 </p>
 <p float="left">
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Slackware.png" width="49%"/> 
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Solus.png" width="49%"/>
+</p>
+<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Ubuntu.png" width="49%"/>
-</p>
-<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/UbuntuMate.png" width="49%"/>
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Void%20Linux.png" width="49%"/>
 </p>
 <p float="left">
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Void%20Linux.png" width="49%"/>  
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Ventoy.png" width="49%"/>
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Windows%2010.png" width="49%"/>
 </p>
 <p float="left">
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Windows%2010.png" width="49%"/>  
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Windows%2011.png" width="49%"/>
+</p>
+<p float="left">
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Xero.png" width="49%"/>
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/ZorinOS.png" width="49%"/>
 </p>
 
@@ -142,18 +149,19 @@ It aims to replace default Grub look, with nice and colorful theme.
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Dell.png" width="49%"/>
 </p>
 <p float="left">
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Framework.png" width="49%"/>  
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Gigabyte.png" width="49%"/>
+</p>
+<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/HP.png" width="49%"/>
-</p>
-<p float="left">
 <img src="https://github.com/AdisonCavani/distro-grub-themes/blob/master/preview/Lenovo.png" width="49%"/>
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/MSI.png" width="49%"/>
 </p>
 <p float="left">
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/MSI.png" width="49%"/>  
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Razer.png" width="49%"/>
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/System76.png" width="49%"/>
 </p>
 <p float="left">
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/System76.png" width="49%"/>  
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Toshiba.png" width="49%"/>
 </p>
 
