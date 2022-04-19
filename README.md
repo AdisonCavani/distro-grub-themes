@@ -195,18 +195,18 @@ Pacman
 ```
 sudo pacman -S grub-customizer
 ```
-
-Eopkg
-
-```
-sudo eopkg install grub-customizer
-```
-Dnf/Fedora
+Dnf
 
 **Grub Customizer DOES NOT WORK on recent Fedora releases without extensive modification. [Manually installing](#manual-installation) is much more secure and hassle free.**
 
 ```
 sudo dnf install grub-customizer
+```
+
+Eopkg
+
+```
+sudo eopkg install grub-customizer
 ```
 
 ### Install pre-made theme with Grub Customizer
