@@ -201,6 +201,13 @@ Eopkg
 ```
 sudo eopkg install grub-customizer
 ```
+Dnf/Fedora
+
+**Grub Customizer DOES NOT WORK on recent Fedora releases without extensive modification. [Manually installing](#manual-installation) is much more secure and hassle free.**
+
+```
+sudo dnf install grub-customizer
+```
 
 ### Install pre-made theme with Grub Customizer
 
@@ -283,16 +290,29 @@ Ctrl+O to save, Ctrl+X to exit
 
 You will need to tell Grub to update its configuration to include the new theme.
 
-Ubuntu and Debian-based systems:
+##### Ubuntu and Debian-based systems:
 
 ```
 sudo update-grub
 ```
 
-Other Linux distro:
+##### Fedora, Arch & Other Linux distros: 
+
+To find out whether you have a BIOS or UEFI system, run the following command in a terminal:
+```
+inxi -M | grep -i 'UEFI\|BIOS'
+```
+
+If you have a BIOS system, run:
 
 ```
 sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+If you have a UEFI system, run:
+
+```
+sudo grub2-mkconfig /etc/grub2-efi.cfg
 ```
 
 ## Install theme in Ventoy
