@@ -197,7 +197,7 @@ sudo pacman -S grub-customizer
 ```
 Dnf
 
-**Grub Customizer DOES NOT WORK on recent Fedora releases without extensive modification. [Manually installing](#manual-installation) is much more secure and hassle free.**
+**Grub Customizer DOES NOT WORK on recent Fedora releases without extensive modification. [Manually installing](#manual-installation) a GRUB theme is much more secure and hassle free.**
 
 ```
 sudo dnf install grub-customizer
