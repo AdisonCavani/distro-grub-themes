@@ -247,6 +247,8 @@ git clone https://github.com/AdisonCavani/distro-grub-themes.git
 
 ```
 sudo mkdir /boot/grub/themes
+or
+sudo mkdir /boot/grub2/themes
 ```
 
 #### Edit or use pre-made theme
@@ -260,7 +262,9 @@ cd distro-grub-themes/customize
 Theme must be unpacked (in folder)
 
 ```
-sudo cp -r ubuntu/ /boot/grub/themes
+sudo cp -r <theme_name>/ /boot/grub/themes
+or
+sudo cp -r <theme_name>/ /boot/grub2/theme
 ```
 
 #### Edit Grub config
@@ -280,10 +284,16 @@ GRUB_GFXMODE=1920x1080
 At the end of file add theme path:
 
 ```
-GRUB_THEME="/boot/grub/themes/ubuntu/theme.txt"
+GRUB_THEME="/boot/grub/themes/<theme_name>/theme.txt"
 ```
 
-Replace "ubuntu" with selected theme<br>
+### Note:
+- **Replace "<theme_name>" with selected theme's name.**
+
+- **To check what name your distro has given the GRUB folder, run:**
+  ``` 
+  ls /boot | grep -i -w 'grub\|grub2'
+  ```
 Ctrl+O to save, Ctrl+X to exit
 
 #### Update Grub config
