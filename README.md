@@ -264,7 +264,7 @@ Theme must be unpacked (in folder)
 ```
 sudo cp -r <theme_name>/ /boot/grub/themes
 or
-sudo cp -r <theme_name>/ /boot/grub2/theme
+sudo cp -r <theme_name>/ /boot/grub2/themes
 ```
 
 #### Edit Grub config
@@ -285,6 +285,8 @@ At the end of file add theme path:
 
 ```
 GRUB_THEME="/boot/grub/themes/<theme_name>/theme.txt"
+or
+GRUB_THEME="/boot/grub2/themes/<theme_name>/theme.txt"
 ```
 
 ### Note:
