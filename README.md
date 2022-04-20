@@ -318,13 +318,15 @@ inxi -M | grep -i 'UEFI\|BIOS'
 If you have a BIOS system, run:
 
 ```
-sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudo grub-mkconfig -o /etc/grub.cfg
+or
+sudo grub2-mkconfig -o /etc/grub2.cfg
 ```
 
 If you have a UEFI system, run:
 
 ```
-sudo grub2-mkconfig /etc/grub2-efi.cfg
+sudo grub2-mkconfig -o /etc/grub2.cfg && sudo grub2-mkconfig -o /etc/grub2-efi.cfg && sudo grub2-mkconfig /etc/grub2-efi.cfg
 ```
 
 ## Install theme in Ventoy
