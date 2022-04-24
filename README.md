@@ -187,6 +187,7 @@ git clone https://github.com/AdisonCavani/distro-grub-themes.git
 
 ### Install Grub Customizer
 
+**Warning**: ``grub-customizer`` is not available on Ubuntu 21.10 and above. See [#56](https://github.com/AdisonCavani/distro-grub-themes/issues/56). You should [install it manually](#manual-installation)<br><br>
 Apt
 
 ```
@@ -200,9 +201,9 @@ Pacman
 ```
 sudo pacman -S grub-customizer
 ```
-Dnf
+Dnf<br>
 
-**WARNING:Grub Customizer DOES NOT WORK on recent Fedora releases without extensive modification. [Manually installing](#manual-installation) a GRUB theme is much more secure and hassle free.**
+**WARNING**: Grub Customizer DOES NOT WORK on recent Fedora releases without extensive modification. [Manually installing](#manual-installation) a GRUB theme is much more secure and hassle free
 
 ```
 Use at own risk.
