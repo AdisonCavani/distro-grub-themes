@@ -195,6 +195,14 @@ Pacman
 ```
 sudo pacman -S grub-customizer
 ```
+Dnf
+
+**WARNING:Grub Customizer DOES NOT WORK on recent Fedora releases without extensive modification. [Manually installing](#manual-installation) a GRUB theme is much more secure and hassle free.**
+
+```
+Use at own risk.
+sudo dnf install grub-customizer
+```
 
 Eopkg
 
@@ -240,6 +248,8 @@ git clone https://github.com/AdisonCavani/distro-grub-themes.git
 
 ```
 sudo mkdir /boot/grub/themes
+or
+sudo mkdir /boot/grub2/themes
 ```
 
 #### Edit or use pre-made theme
@@ -253,7 +263,9 @@ cd distro-grub-themes/customize
 Theme must be unpacked (in folder)
 
 ```
-sudo cp -r ubuntu/ /boot/grub/themes
+sudo cp -r <theme_name>/ /boot/grub/themes
+or
+sudo cp -r <theme_name>/ /boot/grub2/themes
 ```
 
 #### Edit Grub config
@@ -273,27 +285,51 @@ GRUB_GFXMODE=1920x1080
 At the end of file add theme path:
 
 ```
-GRUB_THEME="/boot/grub/themes/ubuntu/theme.txt"
+GRUB_THEME="/boot/grub/themes/<theme_name>/theme.txt"
+or
+GRUB_THEME="/boot/grub2/themes/<theme_name>/theme.txt"
 ```
 
-Replace "ubuntu" with selected theme<br>
+### Note:
+- **Replace "<theme_name>" with selected theme's name.**
+
+- **To check what name your distro has given the GRUB folder, run:**
+  ``` 
+  ls /boot | grep -i -w 'grub\|grub2'
+  ```
 Ctrl+O to save, Ctrl+X to exit
 
 #### Update Grub config
 
 You will need to tell Grub to update its configuration to include the new theme.
 
-Ubuntu and Debian-based systems:
+##### Ubuntu and Debian-based systems:
 
 ```
 sudo update-grub
 ```
 
-Other Linux distro:
+##### Fedora, Arch & Other Linux distros: 
+
+To find out whether you have a BIOS or UEFI system, run the following command in a terminal:
+```
+inxi -M | grep -i 'UEFI\|BIOS'
+```
+
+If you have a BIOS system, run:
 
 ```
-sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudo grub-mkconfig -o /etc/grub.cfg
+or
+sudo grub2-mkconfig -o /etc/grub2.cfg
 ```
+
+If you have a UEFI system, run:
+
+```
+sudo grub2-mkconfig -o /etc/grub2.cfg && sudo grub2-mkconfig -o /etc/grub2-efi.cfg && sudo grub2-mkconfig /etc/grub2-efi.cfg
+```
+**WARNING:These commands have only been tested on Fedora UEFI. If you are able to install a GRUB theme using these commands successfully, please add your distro's name here.**
 
 ## Install theme in Ventoy
 
