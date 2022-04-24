@@ -35,6 +35,7 @@ It aims to replace default Grub look, with nice and colorful theme.
 - Deepin
 - ElementaryOS
 - EndeavourOS
+- Fedora
 - FreeBSD
 - Garuda
 - Gentoo
@@ -94,24 +95,28 @@ It aims to replace default Grub look, with nice and colorful theme.
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/EndeavourOS.png" width="49%"/>
 </p>
 <p float="left">
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Fedora.png" width="49%"/>
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/FreeBSD.png" width="49%"/>
+</p>
+<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Garuda.png" width="49%"/>
-</p>
-<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Gentoo.png" width="49%"/>
+</p>
+<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/KDEneon.png" width="49%"/>
-</p>
-<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Linux%20Mint.png" width="49%"/>
+</p>
+<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Manjaro.png" width="49%"/>
-</p>
-<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/MX%20Linux.png" width="49%"/>
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/OpenSUSE.png" width="49%"/>
 </p>
 <p float="left">
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/OpenSUSE.png" width="49%"/>
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/PopOS.png" width="49%"/>
+</p>
+<p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Rocky%20Linux.png" width="49%"/>
+<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Solus.png" width="49%"/>
 </p>
 <p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Slackware.png" width="49%"/> 
