@@ -288,6 +288,8 @@ Uncomment this line and set your resolution:
 GRUB_GFXMODE=1920x1080
 ```
 
+Make sure ``GRUB_TERMINAL_OUTPUT="console"`` line is disabled!
+
 At the end of file add theme path:
 
 ```
