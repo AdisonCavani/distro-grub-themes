@@ -337,7 +337,7 @@ If you have a UEFI system, run:
 ```
 sudo grub2-mkconfig -o /etc/grub2.cfg && sudo grub2-mkconfig -o /etc/grub2-efi.cfg && sudo grub2-mkconfig /etc/grub2-efi.cfg
 ```
-**WARNING:These commands have only been tested on Fedora UEFI. If you are able to install a GRUB theme using these commands successfully, please add your distro's name here.**
+**WARNING:These commands have only been tested on Arch and Fedora UEFI. If you are able to install a GRUB theme using these commands successfully, please add your distro's name here.**
 
 ## Install theme in Ventoy
 
