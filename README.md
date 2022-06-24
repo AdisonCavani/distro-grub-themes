@@ -237,6 +237,17 @@ sudo eopkg install grub-customizer
 - Select your archive
 - Save changes
 
+### KDE Neon
+
+Neon's default theme is set in a seperate file that overrides any theme changes you make. Run the following to disable the default grub theme:
+
+```
+sudo rm /etc/default/grub.d/99_breeze-grub.cfg
+sudo update-grub
+```
+
+To revert back to the orignal KDE Neon theme, in the Grub Customizer: Appearance settings, change the theme dropdown back to breeze.
+
 ## Manual Installation
 
 In order to clone repository from Github you have to install `git` package <br>
@@ -338,6 +349,18 @@ If you have a UEFI system, run:
 sudo grub2-mkconfig -o /etc/grub2.cfg && sudo grub2-mkconfig -o /etc/grub2-efi.cfg && sudo grub2-mkconfig /etc/grub2-efi.cfg
 ```
 **WARNING:These commands have only been tested on Arch and Fedora UEFI. If you are able to install a GRUB theme using these commands successfully, please add your distro's name here.**
+
+#### KDE Neon
+
+Neon's default theme is set in a seperate file that overrides any theme changes you make. Run the following to disable the default grub theme:
+
+```
+sudo rm /etc/default/grub.d/99_breeze-grub.cfg
+```
+
+Ensure you update the grub after this removal via the ubuntu instructions.
+
+To revert back to the orignal KDE Neon theme, set the `GRUB_THEME` value in `/etc/default/grub` to `/boot/grub/themes/breeze/theme.txt`.
 
 ## Install theme in Ventoy
 
