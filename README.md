@@ -251,11 +251,15 @@ git clone https://github.com/AdisonCavani/distro-grub-themes.git
 ```
 
 #### Create themes directory
+``BOOT_GRUB_LOCATION`` - directory, where ``grub`` is located.
+Usually it's:
+**/boot/grub**, **/boot/grub2**
+but some distributions have a custom one, so you have to figure it out.
 
 ```
-sudo mkdir /boot/grub/themes
+sudo mkdir BOOT_GRUB_LOCATION/themes
 or
-sudo mkdir /boot/grub2/themes
+sudo mkdir BOOT_GRUB_LOCATION/themes
 ```
 
 #### Edit or use pre-made theme
@@ -269,9 +273,9 @@ cd distro-grub-themes/customize
 Theme must be unpacked (in folder)
 
 ```
-sudo cp -r <theme_name>/ /boot/grub/themes
+sudo cp -r <theme_name>/ BOOT_GRUB_LOCATION/themes
 or
-sudo cp -r <theme_name>/ /boot/grub2/themes
+sudo cp -r <theme_name>/ BOOT_GRUB_LOCATION/themes
 ```
 
 #### Edit Grub config
@@ -293,18 +297,9 @@ Make sure ``GRUB_TERMINAL_OUTPUT="console"`` line is disabled!
 At the end of file add theme path:
 
 ```
-GRUB_THEME="/boot/grub/themes/<theme_name>/theme.txt"
-or
-GRUB_THEME="/boot/grub2/themes/<theme_name>/theme.txt"
+GRUB_THEME="BOOT_GRUB_LOCATION/themes/<theme_name>/theme.txt"
 ```
 
-### Note:
-- **Replace "<theme_name>" with selected theme's name.**
-
-- **To check what name your distro has given the GRUB folder, run:**
-  ``` 
-  ls /boot | grep -i -w 'grub\|grub2'
-  ```
 Ctrl+O to save, Ctrl+X to exit
 
 #### Update Grub config
@@ -319,25 +314,22 @@ sudo update-grub
 
 ##### Fedora, Arch & Other Linux distros: 
 
-To find out whether you have a BIOS or UEFI system, run the following command in a terminal:
-```
-inxi -M | grep -i 'UEFI\|BIOS'
-```
-
-If you have a BIOS system, run:
-
-```
-sudo grub-mkconfig -o /etc/grub.cfg
-or
-sudo grub2-mkconfig -o /etc/grub2.cfg
-```
 
 If you have a UEFI system, run:
 
 ```
-sudo grub2-mkconfig -o /etc/grub2.cfg && sudo grub2-mkconfig -o /etc/grub2-efi.cfg && sudo grub2-mkconfig /etc/grub2-efi.cfg
+sudo grub-mkconfig -o /etc/grub.cfg
 ```
-**WARNING:These commands have only been tested on Arch and Fedora UEFI. If you are able to install a GRUB theme using these commands successfully, please add your distro's name here.**
+or
+```
+sudo grub2-mkconfig -o /etc/grub.cfg
+```
+or for Fedora
+```
+sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
+```
+
+**WARNING: this commands may not work for you. Your grub config directory may vary depending on your distribution**
 
 ## Install theme in Ventoy
 
