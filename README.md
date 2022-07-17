@@ -251,9 +251,9 @@ git clone https://github.com/AdisonCavani/distro-grub-themes.git
 ```
 
 #### Create themes directory
-``BOOT_GRUB_LOCATION`` - directory, where ``grub`` is located.
-Usually it's:
-**/boot/grub**, **/boot/grub2**
+``BOOT_GRUB_LOCATION`` - directory, where ``grub`` is located.<br>
+Usually it's:<br>
+**/boot/grub**, **/boot/grub2**<br>
 but some distributions have a custom one, so you have to figure it out.
 
 ```
@@ -273,8 +273,6 @@ cd distro-grub-themes/customize
 Theme must be unpacked (in folder)
 
 ```
-sudo cp -r <theme_name>/ BOOT_GRUB_LOCATION/themes
-or
 sudo cp -r <theme_name>/ BOOT_GRUB_LOCATION/themes
 ```
 
