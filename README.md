@@ -237,8 +237,7 @@ sudo eopkg install grub-customizer
 - Select your archive
 - Save changes
 
-### KDE Neon
-
+#### Note:
 Neon's default theme is set in a seperate file that overrides any theme changes you make. Run the following to disable the default grub theme:
 
 ```
@@ -340,7 +339,7 @@ sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
 
 **WARNING: this commands may not work for you. Your grub config directory may vary depending on your distribution**
 
-#### KDE Neon
+#### Note:
 
 Neon's default theme is set in a seperate file that overrides any theme changes you make. Run the following to disable the default grub theme:
 
