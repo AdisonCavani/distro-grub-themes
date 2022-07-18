@@ -1,4 +1,4 @@
-# Welcome to GitHub docs contributing guide
+# Contributing guide
 
 Thank you for investing your time in contributing to our project! :sparkles:. 
 
@@ -12,11 +12,11 @@ Project structure:
 ```
 .
 ├── assets                       - assets for creating background images
-|   ├── background_template      - Photoshop project file for creating background image
-|   ├── icons                    - icons that gets copied to icons folder in every theme
-|   └── preview_template         - Photoshop project file for creating preview image
+|   ├── background_template      - Photoshop project files for creating background images
+|   ├── icons                    - icons that get copied to icons folder in every theme
+|   └── preview_template         - Photoshop project files for creating preview images
 ├── customize                    - non-compressed themes
 ├── font                         - fonts used in each theme
-├── preview                      - preview images for Github repository
+├── preview                      - preview images for README.md
 └── themes                       - compressed themes ready to install in .tar format
 ```
