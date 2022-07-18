@@ -4,16 +4,16 @@
 [![name](https://img.shields.io/github/v/release/AdisonCavani/distro-grub-themes)](https://github.com/AdisonCavani/distro-grub-themes/releases)
 [![Build](https://github.com/AdisonCavani/distro-grub-themes/actions/workflows/update-content.yml/badge.svg?event=push)](https://github.com/AdisonCavani/distro-grub-themes/actions/workflows/update-content.yml)<br>
 
-A pack of GRUB2 themes for different Linux distribution and OS.<br>
-It aims to replace default Grub look, with nice and colorful theme.
+A pack of GRUB2 themes for different Linux distributions and OSs.<br>
+It aims to replace the default GRUB look, with a nice and colorful theme.
 
 ## Get started
 
 - [Themes](#themes)
   - [Supported distributions](#supported-distributions)
   - [Supported vendors](#supported-vendors)
-- [Preview theme](#preview-theme)
 
+- [Preview themes](#preview-themes)
   - [Distro themes](#distro-themes)
   - [Vendor themes](#vendor-themes)
 
@@ -21,6 +21,7 @@ It aims to replace default Grub look, with nice and colorful theme.
   - [Installation via Grub Customizer](#installation-via-grub-customizer)
   - [Manual Installation](#manual-installation)
   - [Install theme in Ventoy](#install-theme-in-ventoy)
+  
 - [To-do list](#to-do-list)
 
 # Themes
@@ -44,7 +45,7 @@ It aims to replace default Grub look, with nice and colorful theme.
 - Manjaro
 - MX Linux
 - openSUSE
-- Pop! OS
+- Pop!_OS
 - Rocky Linux
 - Slackware
 - Solus
@@ -74,7 +75,7 @@ It aims to replace default Grub look, with nice and colorful theme.
 - System76
 - Toshiba
 
-## Preview theme
+## Preview themes
 
 ### Distro themes
 
@@ -172,137 +173,134 @@ It aims to replace default Grub look, with nice and colorful theme.
 
 # Installation
 
-## Installation via Grub Customizer
+## Installation via GRUB Customizer
 
-In order to clone repository from Github you have to install `git` package <br>
-Alternatively you can download zip package - **Code -> Download ZIP**
+In order to clone the repository from GitHub, you have to install Git, via the `git` package <br>
+Alternatively, you can download a zip archive by clicking on **Code** then **Download ZIP**
 
 #### Clone the repository
 
-You can clone repository or go to [release page](https://github.com/AdisonCavani/distro-grub-themes/releases) and download a single theme
+You can clone the repository or go to the [release page](https://github.com/AdisonCavani/distro-grub-themes/releases) and download a single theme.
 
-```
+```shell
 git clone https://github.com/AdisonCavani/distro-grub-themes.git
 ```
 
-### Install Grub Customizer
+### Install GRUB Customizer
 
-**Warning**: ``grub-customizer`` is not available on Ubuntu 21.10 and above. See [#56](https://github.com/AdisonCavani/distro-grub-themes/issues/56). You should [install it manually](#manual-installation)<br><br>
-Apt
+**Warning**: ``grub-customizer`` is not available on Ubuntu 21.10 and above. See [#56](https://github.com/AdisonCavani/distro-grub-themes/issues/56). You should [install it manually](#manual-installation), instead.<br><br>
 
-```
+apt
+
+```shell
 sudo add-apt-repository ppa:danielrichter2007/grub-customizer
 sudo apt-get update
 sudo apt-get install grub-customizer
 ```
 
-Pacman
+pacman
 
-```
+```shell
 sudo pacman -S grub-customizer
 ```
-Dnf<br>
 
-**WARNING**: Grub Customizer DOES NOT WORK on recent Fedora releases without extensive modification. [Manually installing](#manual-installation) a GRUB theme is much more secure and hassle free
+dnf<br>
 
-```
-Use at own risk.
+**WARNING**: Grub Customizer DOES NOT WORK on recent Fedora releases without extensive modification. [Manually installing](#manual-installation) a GRUB theme is much more secure and hassle free. Use at your own risk.
+
+```shell
 sudo dnf install grub-customizer
 ```
 
-Eopkg
+eopkg
 
-```
+```shell
 sudo eopkg install grub-customizer
 ```
 
-### Install pre-made theme with Grub Customizer
+### Install a pre-made theme with GRUB Customizer
 
-- Open Grub Customizer
-- Go to **Appearance settings** tab
-- Select _Custom resolution_ and type in your resolution. E.g: 1920x1080
-- Press _Add theme_ button, go to your directory, where you have cloned repository. In my case `/home/adison/distro-grub-theme`
-- Select your theme located in `/themes` directory
-- Save changes
+- Open GRUB Customizer
+- Click on the **Appearance settings** tab
+- Select _Custom resolution_ and select or type in your resolution, e.g 1920x1080
+- Press the _Add theme_ button, then navigate to the directory where you cloned the repository; in my case `/home/adison/distro-grub-themes`
+- Select your theme located in the `/themes` directory
+- Save the changes
 
-### Install custom-made theme with Grub Customizer
+### Install a custom-made theme with GRUB Customizer
 
-- Edit your theme located in `/customize` folder
-- With your file manager, inside edited theme directory, select all files and **create archive** with .tar or .tar.xz extension
-- Open Grub Customizer
-- Go to **Appearance settings** tab
-- Enable _Custom resolution_ checkbox and select your resolution or type it in manually. E.g: 1920x1080
-- Press _Add theme_ button, go to your directory, where you have cloned repository. In my case `/home/adison/distro-grub-theme`
-- Change view settings from _Archive files_ to **All files**
+- Edit your theme located in the `/customize` folder
+- With your file manager, inside the modified theme's directory, select all files and create an archive with .tar or .tar.xz format
+- Open GRUB Customizer
+- Click on the **Appearance settings** tab
+- Enable _Custom resolution_ and select or type in your resolution, e.g 1920x1080
+- Press the _Add theme_ button, then navigate to the directory where you cloned the repository; in my case `/home/adison/distro-grub-themes`
+- Change the _Archive files_ setting to **All files**
 - Select your archive
-- Save changes
+- Save the changes
 
 #### Note:
-Neon's default theme is set in a seperate file that overrides any theme changes you make. Run the following to disable the default grub theme:
+KDE Neon's default theme is set in a separate file that overrides any theme changes you make. Run the following to disable the default GRUB theme:
 
-```
+```shell
 sudo rm /etc/default/grub.d/99_breeze-grub.cfg
 sudo update-grub
 ```
 
-To revert back to the orignal KDE Neon theme, in the Grub Customizer: Appearance settings, change the theme dropdown back to breeze.
+To revert back to the orignal KDE Neon theme, open GRUB Customizer, and in the Appearance settings tab, change the theme dropdown back to breeze.
 
 ## Manual Installation
 
-In order to clone repository from Github you have to install `git` package <br>
-Alternatively you can download zip package - **Code -> Download ZIP**
+In order to clone the repository from GitHub, you have to install Git, via the `git` package <br>
+Alternatively, you can download a zip archive by clicking on **Code** then **Download ZIP**
 
 #### Clone the repository
 
-You can clone repository or go to [release page](https://github.com/AdisonCavani/distro-grub-themes/releases) and download a single theme
+You can clone the repository, or go to the [release page](https://github.com/AdisonCavani/distro-grub-themes/releases) and download a single theme.
 
-```
+```shell
 git clone https://github.com/AdisonCavani/distro-grub-themes.git
 ```
 
-#### Create themes directory
-``BOOT_GRUB_LOCATION`` - directory, where ``grub`` is located.<br>
-Usually it's:<br>
-**/boot/grub**, **/boot/grub2**<br>
-but some distributions have a custom one, so you have to figure it out.
+#### Create the themes directory
+To create the themes directory, replace `BOOT_GRUB_LOCATION` with the directory where GRUB is located.<br>
+Usually it's /boot/grub or /boot/grub2 but some distributions have a different one, so you'll have to figure it out.
 
-```
-sudo mkdir BOOT_GRUB_LOCATION/themes
-or
+```shell
 sudo mkdir BOOT_GRUB_LOCATION/themes
 ```
 
-#### Edit or use pre-made theme
+#### Edit or use a pre-made theme
 
-```
+```shell
 cd distro-grub-themes/customize
 ```
 
 #### Copy theme
 
-Theme must be unpacked (in folder)
+The theme must be unpacked inside a folder before you can copy it.
 
 ```
 sudo cp -r <theme_name>/ BOOT_GRUB_LOCATION/themes
 ```
 
-#### Edit Grub config
+#### Edit GRUB config
 
-You can use your favourite text editor
+You can use your favourite text editor for this. Here, we use nano.
 
 ```
 sudo nano /etc/default/grub
 ```
 
-Uncomment this line and set your resolution:
+Uncomment this line and set your display resolution:
 
 ```
 GRUB_GFXMODE=1920x1080
 ```
 
-Make sure ``GRUB_TERMINAL_OUTPUT="console"`` line is disabled!
+Make sure ``GRUB_TERMINAL_OUTPUT="console"`` is commented out!
 
-At the end of file add theme path:
+At the end of the file, add the path of your theme:
 
 ```
 GRUB_THEME="BOOT_GRUB_LOCATION/themes/<theme_name>/theme.txt"
@@ -312,7 +310,7 @@ Ctrl+O to save, Ctrl+X to exit
 
 #### Update Grub config
 
-You will need to tell Grub to update its configuration to include the new theme.
+You'll need to tell GRUB to update its configuration in order to include the new theme.
 
 ##### Ubuntu and Debian-based systems:
 
@@ -320,40 +318,38 @@ You will need to tell Grub to update its configuration to include the new theme.
 sudo update-grub
 ```
 
-##### Fedora, Arch & Other Linux distros: 
+##### Fedora, Arch & others: 
 
 
 If you have a UEFI system, run:
 
 ```
-sudo grub-mkconfig -o /etc/grub.cfg
+sudo grub-mkconfig -o BOOT_GRUB_LOCATION/grub.cfg
 ```
 or
 ```
-sudo grub2-mkconfig -o /etc/grub.cfg
+sudo grub2-mkconfig -o BOOT_GRUB_LOCATION/grub.cfg
 ```
 or for Fedora
 ```
 sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
 ```
 
-**WARNING: this commands may not work for you. Your grub config directory may vary depending on your distribution**
+**WARNING: these commands may not work for you. Your GRUB config directory may vary depending on your distribution.**
 
 #### Note:
+KDE Neon's default theme is set in a separate file that overrides any theme changes you make. Run the following to disable the default GRUB theme:
 
-Neon's default theme is set in a seperate file that overrides any theme changes you make. Run the following to disable the default grub theme:
-
-```
+```shell
 sudo rm /etc/default/grub.d/99_breeze-grub.cfg
+sudo update-grub
 ```
-
-Ensure you update the grub after this removal via the ubuntu instructions.
 
 To revert back to the orignal KDE Neon theme, set the `GRUB_THEME` value in `/etc/default/grub` to `/boot/grub/themes/breeze/theme.txt`.
 
 ## Install theme in Ventoy
 
-Extract `Ventoy.tar` to `/ventoy/theme` directory
+Extract `Ventoy.tar` to `/ventoy/theme`
 
 Locate `ventoy.json` file in `/plugin/ventoy/` directory and change:
 
@@ -367,7 +363,7 @@ to
 "file": "/ventoy/theme/Ventoy/theme.txt",
 ```
 
-For more information head over to [Ventoy website](https://www.ventoy.net/en/plugin_theme.html)
+For more information, head over to the [Ventoy website](https://www.ventoy.net/en/plugin_theme.html).
 
 # To-do list
 
