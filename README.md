@@ -69,6 +69,7 @@ It aims to replace the default GRUB look, with a nice and colorful theme.
 - Framework
 - Gigabyte
 - HP
+- Legion
 - Lenovo
 - MSI
 - Razer
@@ -81,94 +82,97 @@ It aims to replace the default GRUB look, with a nice and colorful theme.
 
 <p float="left">
 <img src="https://raw.githubusercontent.com/AdisonCavani/grub-theme/master/preview/Arch%20Linux.png" width="49%"/>
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Arco%20Linux.png" width="49%"/>
+<img src="./preview/Arco%20Linux.png" width="49%"/>
 </p>
 <p float="left">
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Artix%20Linux.png" width="49%"/>
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/CentOS.png" width="49%"/>
+<img src="./preview/Artix%20Linux.png" width="49%"/>
+<img src="./preview/CentOS.png" width="49%"/>
 </p>
 <p float="left">
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Debian.png" width="49%"/>
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Deepin.png" width="49%"/>
+<img src="./preview/Debian.png" width="49%"/>
+<img src="./preview/Deepin.png" width="49%"/>
 </p>
 <p float="left">
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/ElementaryOS.png" width="49%"/>
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/EndeavourOS.png" width="49%"/>
+<img src="./preview/ElementaryOS.png" width="49%"/>
+<img src="./preview/EndeavourOS.png" width="49%"/>
 </p>
 <p float="left">
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Fedora.png" width="49%"/>
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/FreeBSD.png" width="49%"/>
+<img src="./preview/Fedora.png" width="49%"/>
+<img src="./preview/FreeBSD.png" width="49%"/>
 </p>
 <p float="left">
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Garuda.png" width="49%"/>
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Gentoo.png" width="49%"/>
+<img src="./preview/Garuda.png" width="49%"/>
+<img src="./preview/Gentoo.png" width="49%"/>
 </p>
 <p float="left">
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/KDEneon.png" width="49%"/>
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Linux%20Mint.png" width="49%"/>
+<img src="./preview/KDEneon.png" width="49%"/>
+<img src="./preview/Linux%20Mint.png" width="49%"/>
 </p>
 <p float="left">
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Manjaro.png" width="49%"/>
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/MX%20Linux.png" width="49%"/>
+<img src="./preview/Manjaro.png" width="49%"/>
+<img src="./preview/MX%20Linux.png" width="49%"/>
 </p>
 <p float="left">
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/OpenSUSE.png" width="49%"/>
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/PopOS.png" width="49%"/>
+<img src="./preview/OpenSUSE.png" width="49%"/>
+<img src="./preview/PopOS.png" width="49%"/>
 </p>
 <p float="left">
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Rocky%20Linux.png" width="49%"/>
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Solus.png" width="49%"/>
+<img src="./preview/Rocky%20Linux.png" width="49%"/>
+<img src="./preview/Solus.png" width="49%"/>
 </p>
 <p float="left">
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Slackware.png" width="49%"/> 
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Solus.png" width="49%"/>
+<img src="./preview/Slackware.png" width="49%"/> 
+<img src="./preview/Solus.png" width="49%"/>
 </p>
 <p float="left">
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Ubuntu.png" width="49%"/>
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/UbuntuMate.png" width="49%"/>
+<img src="./preview/Ubuntu.png" width="49%"/>
+<img src="./preview/UbuntuMate.png" width="49%"/>
 </p>
 <p float="left">
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Void%20Linux.png" width="49%"/>  
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Ventoy.png" width="49%"/>
+<img src="./preview/Void%20Linux.png" width="49%"/>  
+<img src="./preview/Ventoy.png" width="49%"/>
 </p>
 <p float="left">
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Windows%2010.png" width="49%"/>  
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Windows%2011.png" width="49%"/>
+<img src="./preview/Windows%2010.png" width="49%"/>  
+<img src="./preview/Windows%2011.png" width="49%"/>
 </p>
 <p float="left">
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Xero.png" width="49%"/>
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/ZorinOS.png" width="49%"/>
+<img src="./preview/Xero.png" width="49%"/>
+<img src="./preview/ZorinOS.png" width="49%"/>
 </p>
 
 ### Vendor themes
 
 <p float="left">
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Acer.png" width="49%"/>
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Aorus.png" width="49%"/>
+<img src="./preview/Acer.png" width="49%"/>
+<img src="./preview/Aorus.png" width="49%"/>
 </p>
 <p float="left">
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Apple.png" width="49%"/>
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Asus.png" width="49%"/>
+<img src="./preview/Apple.png" width="49%"/>
+<img src="./preview/Asus.png" width="49%"/>
 </p>
 <p float="left">
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/ASRock.png" width="49%"/>
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Dell.png" width="49%"/>
+<img src="./preview/ASRock.png" width="49%"/>
+<img src="./preview/Dell.png" width="49%"/>
 </p>
 <p float="left">
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Framework.png" width="49%"/>  
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Gigabyte.png" width="49%"/>
+<img src="./preview/Framework.png" width="49%"/>  
+<img src="./preview/Gigabyte.png" width="49%"/>
 </p>
 <p float="left">
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/HP.png" width="49%"/>
-<img src="https://github.com/AdisonCavani/distro-grub-themes/blob/master/preview/Lenovo.png" width="49%"/>
+<img src="./preview/HP.png" width="49%"/>
+<img src="./preview/Legion.png" width="49%"/>
 </p>
 <p float="left">
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/MSI.png" width="49%"/>  
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Razer.png" width="49%"/>
+<img src="./preview/Lenovo.png" width="49%"/>
+<img src="./preview/MSI.png" width="49%"/>  
 </p>
 <p float="left">
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/System76.png" width="49%"/>  
-<img src="https://raw.githubusercontent.com/AdisonCavani/distro-grub-themes/master/preview/Toshiba.png" width="49%"/>
+<img src="./preview/Razer.png" width="49%"/>
+<img src="./preview/System76.png" width="49%"/>  
+</p>
+<p float="left">
+<img src="./preview/Toshiba.png" width="49%"/>
 </p>
 
 # Installation
@@ -368,6 +372,6 @@ For more information, head over to the [Ventoy website](https://www.ventoy.net/e
 # To-do list
 
 | Feature                   | Status        |
-| ------------------------- | ------------- |
+|---------------------------|---------------|
 | 4K & 2K displays support  | In the future |
 | Ultrawide display support | In the future |
