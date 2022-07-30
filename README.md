@@ -31,6 +31,7 @@ It aims to replace the default GRUB look, with a nice and colorful theme.
 - Arch Linux
 - Arco Linux
 - Artix Linux
+- Bedrock Linux
 - CentOS
 - Debian
 - Deepin
@@ -41,6 +42,7 @@ It aims to replace the default GRUB look, with a nice and colorful theme.
 - Garuda
 - Gentoo
 - KDE Neon
+- Kubuntu
 - Linux Mint
 - Manjaro
 - MX Linux
@@ -75,37 +77,42 @@ It aims to replace the default GRUB look, with a nice and colorful theme.
 - Razer
 - System76
 - Toshiba
+- Vaio
 
 ## Preview themes
 
 ### Distro themes
 
 <p float="left">
-<img src="https://raw.githubusercontent.com/AdisonCavani/grub-theme/master/preview/Arch%20Linux.png" width="49%"/>
+<img src="./preview/Arch%20Linux.png" width="49%"/>
 <img src="./preview/Arco%20Linux.png" width="49%"/>
 </p>
 <p float="left">
 <img src="./preview/Artix%20Linux.png" width="49%"/>
+<img src="./preview/Bedrock.png" width="49%"/>
+</p>
+<p float="left">
 <img src="./preview/CentOS.png" width="49%"/>
-</p>
-<p float="left">
 <img src="./preview/Debian.png" width="49%"/>
+</p>
+<p float="left">
 <img src="./preview/Deepin.png" width="49%"/>
-</p>
-<p float="left">
 <img src="./preview/ElementaryOS.png" width="49%"/>
+</p>
+<p float="left">
 <img src="./preview/EndeavourOS.png" width="49%"/>
-</p>
-<p float="left">
 <img src="./preview/Fedora.png" width="49%"/>
+</p>
+<p float="left">
 <img src="./preview/FreeBSD.png" width="49%"/>
-</p>
-<p float="left">
 <img src="./preview/Garuda.png" width="49%"/>
-<img src="./preview/Gentoo.png" width="49%"/>
 </p>
 <p float="left">
+<img src="./preview/Gentoo.png" width="49%"/>
 <img src="./preview/KDEneon.png" width="49%"/>
+</p>
+<p float="left">
+<img src="./preview/Kubuntu.png" width="49%"/>
 <img src="./preview/Linux%20Mint.png" width="49%"/>
 </p>
 <p float="left">
@@ -118,26 +125,25 @@ It aims to replace the default GRUB look, with a nice and colorful theme.
 </p>
 <p float="left">
 <img src="./preview/Rocky%20Linux.png" width="49%"/>
-<img src="./preview/Solus.png" width="49%"/>
-</p>
-<p float="left">
 <img src="./preview/Slackware.png" width="49%"/> 
+</p>
+<p float="left">
 <img src="./preview/Solus.png" width="49%"/>
-</p>
-<p float="left">
 <img src="./preview/Ubuntu.png" width="49%"/>
-<img src="./preview/UbuntuMate.png" width="49%"/>
 </p>
 <p float="left">
-<img src="./preview/Void%20Linux.png" width="49%"/>  
+<img src="./preview/UbuntuMate.png" width="49%"/>
 <img src="./preview/Ventoy.png" width="49%"/>
 </p>
 <p float="left">
+<img src="./preview/Void%20Linux.png" width="49%"/>
 <img src="./preview/Windows%2010.png" width="49%"/>  
-<img src="./preview/Windows%2011.png" width="49%"/>
 </p>
 <p float="left">
+<img src="./preview/Windows%2011.png" width="49%"/>
 <img src="./preview/Xero.png" width="49%"/>
+</p>
+<p float="left">
 <img src="./preview/ZorinOS.png" width="49%"/>
 </p>
 
@@ -173,6 +179,7 @@ It aims to replace the default GRUB look, with a nice and colorful theme.
 </p>
 <p float="left">
 <img src="./preview/Toshiba.png" width="49%"/>
+<img src="./preview/Vaio.png" width="49%"/>
 </p>
 
 # Installation
