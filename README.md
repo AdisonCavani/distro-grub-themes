@@ -71,6 +71,7 @@ It aims to replace the default GRUB look, with a nice and colorful theme.
 - Framework
 - Gigabyte
 - HP
+- Kingston
 - Legion
 - Lenovo
 - MSI
@@ -167,18 +168,21 @@ It aims to replace the default GRUB look, with a nice and colorful theme.
 </p>
 <p float="left">
 <img src="./preview/HP.png" width="49%"/>
+<img src="./preview/Kingston.png" width="49%"/>
+</p>
+<p float="left">
 <img src="./preview/Legion.png" width="49%"/>
-</p>
-<p float="left">
 <img src="./preview/Lenovo.png" width="49%"/>
+</p>
+<p float="left">
 <img src="./preview/MSI.png" width="49%"/>  
-</p>
-<p float="left">
 <img src="./preview/Razer.png" width="49%"/>
-<img src="./preview/System76.png" width="49%"/>  
 </p>
 <p float="left">
+<img src="./preview/System76.png" width="49%"/>  
 <img src="./preview/Toshiba.png" width="49%"/>
+</p>
+<p float="left">
 <img src="./preview/Vaio.png" width="49%"/>
 </p>
 
