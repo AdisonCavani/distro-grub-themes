@@ -345,10 +345,6 @@ or
 ```
 sudo grub2-mkconfig -o BOOT_GRUB_LOCATION/grub.cfg
 ```
-or for Fedora
-```
-sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
-```
 
 **WARNING: these commands may not work for you. Your GRUB config directory may vary depending on your distribution.**
 
