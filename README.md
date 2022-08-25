@@ -325,7 +325,7 @@ Ctrl+O to save, Ctrl+X to exit
 
 #### Update Grub config
 
-You'll need to tell GRUB to update its configuration in order to include the new theme.
+You'll need to tell GRUB to update its configuration in order to include the new theme. <br>
 
 
 ##### Ubuntu and Debian-based systems:
@@ -333,7 +333,7 @@ You'll need to tell GRUB to update its configuration in order to include the new
 ```shell
 sudo update-grub
 ```
-
+<br>
 
 ##### Fedora and RHEL-based distros:
 ```shell
@@ -345,7 +345,7 @@ OR
 ```shell
 sudo grub2-mkconfig -o /etc/grub2-efi.cfg #For UEFI systems
 ```
-
+<br>
 
 ##### Arch & others: 
 
@@ -357,7 +357,6 @@ or
 ```shell
 sudo grub2-mkconfig -o <GRUB Location>/grub.cfg
 ```
-
 #### Note:
 
 - Commands tested on: ***(Please add your distro here)***
