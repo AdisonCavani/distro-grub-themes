@@ -345,6 +345,16 @@ or
 ```
 sudo grub2-mkconfig -o BOOT_GRUB_LOCATION/grub.cfg
 ```
+On Fedora and RHEL-based distros:
+```
+sudo grub2-mkconfig -o /etc/grub2.cfg #For BIOS systems
+```
+
+OR
+
+```
+sudo grub2-mkconfig -o /etc/grub2-efi.cfg #For UEFI systems
+```
 
 **WARNING: these commands may not work for you. Your GRUB config directory may vary depending on your distribution.**
 
