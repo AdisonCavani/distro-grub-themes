@@ -278,11 +278,11 @@ git clone https://github.com/AdisonCavani/distro-grub-themes.git
 ```
 
 #### Create the themes directory
-To create the themes directory, replace `BOOT_GRUB_LOCATION` with the directory where GRUB is located.<br>
-Usually it's /boot/grub or /boot/grub2 but some distributions have a different one, so you'll have to figure it out.
+To create the themes directory, replace `GRUB Location` with the directory where GRUB is located.<br>
+Usually it's ``/boot/grub`` or ``/boot/grub2`` but some distributions have a different one, so you'll have to figure it out. Your distro's documentation is a great place to start.
 
 ```shell
-sudo mkdir BOOT_GRUB_LOCATION/themes
+sudo mkdir <GRUB Location>/themes
 ```
 
 #### Edit or use a pre-made theme
@@ -295,15 +295,15 @@ cd distro-grub-themes/customize
 
 The theme must be unpacked inside a folder before you can copy it.
 
-```
-sudo cp -r <theme_name>/ BOOT_GRUB_LOCATION/themes
+```shell
+sudo cp -r <theme_name>/<GRUB Location>/themes
 ```
 
 #### Edit GRUB config
 
 You can use your favourite text editor for this. Here, we use nano.
 
-```
+```shell
 sudo nano /etc/default/grub
 ```
 
@@ -318,7 +318,7 @@ Make sure ``GRUB_TERMINAL_OUTPUT="console"`` is commented out!
 At the end of the file, add the path of your theme:
 
 ```
-GRUB_THEME="BOOT_GRUB_LOCATION/themes/<theme_name>/theme.txt"
+GRUB_THEME="<GRUB Location>/themes/<theme_name>/theme.txt"
 ```
 
 Ctrl+O to save, Ctrl+X to exit
@@ -327,46 +327,51 @@ Ctrl+O to save, Ctrl+X to exit
 
 You'll need to tell GRUB to update its configuration in order to include the new theme.
 
+
 ##### Ubuntu and Debian-based systems:
 
-```
+```shell
 sudo update-grub
 ```
 
-##### Fedora, Arch & others: 
 
-
-If you have a UEFI system, run:
-
-```
-sudo grub-mkconfig -o BOOT_GRUB_LOCATION/grub.cfg
-```
-or
-```
-sudo grub2-mkconfig -o BOOT_GRUB_LOCATION/grub.cfg
-```
-On Fedora and RHEL-based distros:
-```
+##### Fedora and RHEL-based distros:
+```shell
 sudo grub2-mkconfig -o /etc/grub2.cfg #For BIOS systems
 ```
 
 OR
 
-```
+```shell
 sudo grub2-mkconfig -o /etc/grub2-efi.cfg #For UEFI systems
 ```
 
-**WARNING: these commands may not work for you. Your GRUB config directory may vary depending on your distribution.**
+
+##### Arch & others: 
+
+```shell
+sudo grub-mkconfig -o <GRUB Location>/grub.cfg
+```
+or
+
+```shell
+sudo grub2-mkconfig -o <GRUB Location>/grub.cfg
+```
 
 #### Note:
-KDE Neon's default theme is set in a separate file that overrides any theme changes you make. Run the following to disable the default GRUB theme:
+
+- Commands tested on: ***(Please add your distro here)***
+  - Fedora
+  - Arch
+  - Debian and it's derivatives (Ubuntu, Mint etc.)
+
+- KDE Neon's default theme is set in a separate file that overrides any theme changes you make. Run the following to disable the default GRUB theme:
 
 ```shell
 sudo rm /etc/default/grub.d/99_breeze-grub.cfg
 sudo update-grub
 ```
-
-To revert back to the orignal KDE Neon theme, set the `GRUB_THEME` value in `/etc/default/grub` to `/boot/grub/themes/breeze/theme.txt`.
+  To revert back to the orignal KDE Neon theme, set the `GRUB_THEME` value in `/etc/default/grub` to `/boot/grub/themes/breeze/theme.txt`.
 
 ## Install theme in Ventoy
 
