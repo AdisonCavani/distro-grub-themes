@@ -25,3 +25,11 @@ Read [contributing guide](https://github.com/AdisonCavani/distro-grub-themes/blo
 
 ### License
 This project is licensed under [GNU General Public License v3.0](https://github.com/AdisonCavani/distro-grub-themes/blob/master/LICENSE)
+
+### Contributors
+
+Thank you to all the people who already contributed to this project!
+
+<a href="https://github.com/AdisonCavani/distro-grub-themes/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=AdisonCavani/distro-grub-themes" />
+</a>
