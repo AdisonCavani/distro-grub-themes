@@ -1,0 +1,251 @@
+{
+  "distros": [
+    {
+      "name": "Arch Linux",
+      "image": "Arch Linux.png",
+      "theme": "arch.tar"
+    },
+    {
+      "name": "Arco Linux",
+      "image": "Arco Linux.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Artix Linux",
+      "image": "Artix Linux.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Bedrock Linux",
+      "image": "Bedrock.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "CentOS",
+      "image": "CentOS.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Debian",
+      "image": "Debian.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Deepin",
+      "image": "Deepin.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "ElementaryOS",
+      "image": "ElementaryOS.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "EndeavourOS",
+      "image": "EndeavourOS.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Fedora",
+      "image": "Fedora.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "FreeBSD",
+      "image": "FreeBSD.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Garuda",
+      "image": "Garuda.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Gentoo",
+      "image": "Gentoo.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "KDE Neon",
+      "image": "KDEneon.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Kubuntu",
+      "image": "Kubuntu.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Linux Mint",
+      "image": "Linux Mint.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Manjaro",
+      "image": "Manjaro.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "MX Linux",
+      "image": "MX Linux.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "openSUSE",
+      "image": "OpenSUSE.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Pop!_OS",
+      "image": "PopOS.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Rocky Linux",
+      "image": "Rocky Linux.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Slackware",
+      "image": "Slackware.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Solus",
+      "image": "Solus.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Ubuntu",
+      "image": "Ubuntu.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Ubuntu Mate",
+      "image": "UbuntuMate.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Ventoy",
+      "image": "Ventoy.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Void Linux",
+      "image": "Void Linux.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Windows 10",
+      "image": "Windows 10.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Windows 11",
+      "image": "Windows 11.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Xero Linux",
+      "image": "Xero.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Zorin OS",
+      "image": "ZorinOS.png",
+      "theme": ".tar"
+    }
+  ],
+  "vendors": [
+    {
+      "name": "Acer",
+      "image": "Acer.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Aorus",
+      "image": "Aorus.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Apple",
+      "image": "Apple.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Asus",
+      "image": "Asus.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "ASRock",
+      "image": "ASRock.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Dell",
+      "image": "Dell.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Framework",
+      "image": "Framework.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Gigabyte",
+      "image": "Gigabyte.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "HP",
+      "image": "HP.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Huawei",
+      "image": "Huawei.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Kingston",
+      "image": "Kingston.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Legion",
+      "image": "Legion.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Lenovo",
+      "image": "Lenovo.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "MSI",
+      "image": "MSI.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Razer",
+      "image": "Razer.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "System76",
+      "image": "System76.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Toshiba",
+      "image": "Toshiba.png",
+      "theme": ".tar"
+    },
+    {
+      "name": "Vaio",
+      "image": "Vaio.png",
+      "theme": ".tar"
+    }
+  ]
+}
