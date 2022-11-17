@@ -15,9 +15,11 @@ To get an overview of the project, read the [README](README.md) and [wiki page](
 |   ├── icons                    - icons that get copied to icons folder in every theme
 |   └── preview_template         - Photoshop project files for creating preview images
 ├── customize                    - non-compressed themes
+├── docs                         - documentation markdown files
 ├── fonts                        - fonts used in each theme
 ├── preview                      - preview images for README.md
-└── themes                       - compressed themes ready to install in .tar format
+├── themes                       - compressed themes ready to install in .tar format
+└── themes.json                  - json file containing all themes definitions (used as database for wiki page)
 ```
 
 ### Workflow
