@@ -6,7 +6,7 @@ on:
     paths:
     - 'assets/icons'
     - 'customize/**'
-    - 'font'
+    - 'fonts'
 
 jobs:
   deploy:
@@ -19,7 +19,7 @@ jobs:
         for dest in customize/* ; do cp -rv assets/icons "$dest"; done
     - name: 📇 Update fonts
       run:  |
-        for dest in customize/* ; do cp -rva font/. "$dest"; done
+        for dest in customize/* ; do cp -rva fonts/. "$dest"; done
     - name: 💼 Update archives
       run:  |
         cd customize;
