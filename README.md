@@ -9,15 +9,18 @@ It aims to replace the default GRUB look, with a nice and colorful theme.
 
 ## Get started
 
-Documentation has moved to [wiki page](https://github.com/AdisonCavani/distro-grub-themes/wiki).
+Documentation is available at [adison.me/distro-grub-themes](https://adison.me/distro-grub-themes).  
+Raw markdown files are located in [`/docs`](./docs) folder.
 
 ## Contributing
 
-Development happens in the open on GitHub, and we are grateful to the community for contributing bugfixes and improvements. Read below to learn how you can take part in improving it.
+Development happens in the open on GitHub, and we are grateful to the community for contributing bugfixes and improvements.  
+Read below to learn how you can take part in improving it.
 
 ### Code of Conduct
 
-This project has adopted a Code of Conduct that we expect project participants to adhere to. Please read [the full text](https://github.com/AdisonCavani/distro-grub-themes/blob/master/.github/CODE_OF_CONDUCT.md) so that you can understand what actions will and will not be tolerated.
+This project has adopted a Code of Conduct that we expect project participants to adhere to.  
+Please read [the full text](https://github.com/AdisonCavani/distro-grub-themes/blob/master/.github/CODE_OF_CONDUCT.md) so that you can understand what actions will and will not be tolerated.
 
 ### Contributing Guide
 
