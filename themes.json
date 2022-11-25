@@ -258,6 +258,12 @@
       "name": "Vaio",
       "image": "Vaio.png",
       "theme": "vaio.tar"
+    },
+    {
+      "name": "Thinkpad",
+      "image": "Thinkpad.png",
+      "theme": "thinkpad.tar",
+      "versionAdded": "v2.9"
     }
   ]
 }
