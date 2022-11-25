@@ -154,6 +154,12 @@
       "name": "Zorin OS",
       "image": "ZorinOS.png",
       "theme": "zorinOS.tar"
+    },
+    {
+      "name": "NixOS",
+      "image": "NixOS.png",
+      "theme": "nixos.tar",
+      "versionAdded": "v2.9"
     }
   ],
   "vendors": [
