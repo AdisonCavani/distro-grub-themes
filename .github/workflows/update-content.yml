@@ -2,33 +2,32 @@ name: Update changes on commit
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
     paths:
-    - 'assets/icons'
-    - 'customize/**'
-    - 'fonts'
+      - "assets/**"
+      - "customize/**"
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - uses: actions/checkout@master
-    - name: 🖼️	Update icons
-      run:  |
-        for dest in customize/* ; do cp -rv assets/icons "$dest"; done
-    - name: 📇 Update fonts
-      run:  |
-        for dest in customize/* ; do cp -rva fonts/. "$dest"; done
-    - name: 💼 Update archives
-      run:  |
-        cd customize;
-        for dest in * ; do find "$dest" -printf "%P\n" | tar -vcf ../themes/"$dest".tar --no-recursion -C "$dest" -T -; done
-    - name: 🔥 Commit changes
-      run:  |
-        git config user.name github-actions
-        git config user.email github-actions@github.com
-        git fetch
-        git add .
-        git commit -m "🤖 Update files"
-        git push
+      - uses: actions/checkout@master
+      - name: 🖼️	Update icons
+        run: |
+          for dest in customize/* ; do cp -rv assets/icons "$dest"; done
+      - name: 📇 Update fonts
+        run: |
+          for dest in customize/* ; do cp -rva assets/fonts/. "$dest"; done
+      - name: 💼 Update archives
+        run: |
+          cd customize;
+          for dest in * ; do find "$dest" -printf "%P\n" | tar -vcf ../themes/"$dest".tar --no-recursion -C "$dest" -T -; done
+      - name: 🔥 Commit changes
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git fetch
+          git add .
+          git commit -m "🤖 Update files"
+          git push
