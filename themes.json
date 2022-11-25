@@ -192,7 +192,7 @@
     {
       "name": "ASRock",
       "image": "ASRock.png",
-      "theme": ".tar"
+      "theme": "asrock.tar"
     },
     {
       "name": "Dell",
@@ -237,7 +237,7 @@
     {
       "name": "MSI",
       "image": "MSI.png",
-      "theme": ".tar"
+      "theme": "msi.tar"
     },
     {
       "name": "Razer",
