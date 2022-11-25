@@ -160,6 +160,12 @@
       "image": "NixOS.png",
       "theme": "nixos.tar",
       "versionAdded": "v2.9"
+    },
+    {
+      "name": "Lubuntu",
+      "image": "Lubuntu.png",
+      "theme": "lubuntu.tar",
+      "versionAdded": "v2.9"
     }
   ],
   "vendors": [
