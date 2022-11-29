@@ -166,6 +166,12 @@
       "image": "Lubuntu.png",
       "theme": "lubuntu.tar",
       "versionAdded": "v2.9"
+    },
+    {
+      "name": "ChromeOS",
+      "image": "ChromeOS.png",
+      "theme": "chromeos.tar",
+      "versionAdded": "v2.9"
     }
   ],
   "vendors": [
