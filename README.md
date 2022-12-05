@@ -2,7 +2,8 @@
 
 [![name](https://img.shields.io/github/license/AdisonCavani/distro-grub-themes)](https://github.com/AdisonCavani/distro-grub-themes/blob/master/LICENSE)
 [![name](https://img.shields.io/github/v/release/AdisonCavani/distro-grub-themes)](https://github.com/AdisonCavani/distro-grub-themes/releases)
-[![Build](https://github.com/AdisonCavani/distro-grub-themes/actions/workflows/update-content.yml/badge.svg?event=push)](https://github.com/AdisonCavani/distro-grub-themes/actions/workflows/update-content.yml)<br>
+[![Build](https://github.com/AdisonCavani/distro-grub-themes/actions/workflows/update-content.yml/badge.svg?event=push)](https://github.com/AdisonCavani/distro-grub-themes/actions/workflows/update-content.yml)
+<br>
 
 A pack of GRUB2 themes for different Linux distributions and OSs.<br>
 It aims to replace the default GRUB look, with a nice and colorful theme.
@@ -11,6 +12,12 @@ It aims to replace the default GRUB look, with a nice and colorful theme.
 
 Documentation is available at [adison.me/distro-grub-themes](https://adison.me/distro-grub-themes).  
 Raw markdown files are located in [`/docs`](./docs) folder.
+
+## Funding
+I put a lot of effort and my free time into maintaining this project.  
+If you appreciate that, you can buy me a coffee.
+
+<img src="https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-1.svg" alt="Buy Me A Coffee" height="50px" />
 
 ## Contributing
 
