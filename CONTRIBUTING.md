@@ -40,7 +40,7 @@ You can track your workflows [here](https://github.com/AdisonCavani/distro-grub-
 
 ### Frequently Asked Questions
 **Q**: Where are `psd` templates located?  
-**A**: Templates are located in [`templates`](https://github.com/AdisonCavani/distro-grub-themes/tree/templates) branch
+**A**: Templates are located in [`templates`](https://github.com/AdisonCavani/distro-grub-themes/tree/templates) branch.
 
 **Q**: How can I edit `psd` template? I don't have Photoshop  
-**A**: You can import `psd` into GIMP, however this might cause to lose some Photoshop related data. I recommend to use [Photopea](https://www.photopea.com/) - free Web Photoshop alternative
+**A**: You can import `psd` into GIMP, however this might cause to lose some Photoshop related data. I recommend to use [Photopea](https://www.photopea.com/) - free web-based Photoshop alternative.
