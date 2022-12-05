@@ -29,3 +29,11 @@ Folders that trigger new action/workflow:
 
 Every time you create new commit on master branch, github action bot will update all files (as defined in [this file](https://github.com/AdisonCavani/distro-grub-themes/blob/master/.github/workflows/update-content.yml)).  
 You can track your workflows [here](https://github.com/AdisonCavani/distro-grub-themes/actions).
+
+### Branches
+
+```
+├── master                       - main branch containing latest changes
+├── legacy                       - obsolete C# program, replaced by Github Actions workflow
+└── templates                    - PSD, phosothop templates for background images
+```
