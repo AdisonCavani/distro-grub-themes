@@ -17,7 +17,7 @@ Raw markdown files are located in [`/docs`](./docs) folder.
 I put a lot of effort and my free time into maintaining this project.  
 If you appreciate that, you can buy me a coffee.
 
-<img src="https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-1.svg" alt="Buy Me A Coffee" height="50px" />
+[<img src="https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-1.svg" alt="Buy Me A Coffee" height="50px" />](https://www.buymeacoffee.com/adisoncavani)
 
 ## Contributing
 
