@@ -37,3 +37,10 @@ You can track your workflows [here](https://github.com/AdisonCavani/distro-grub-
 ├── legacy                       - obsolete C# program, replaced by Github Actions workflow
 └── templates                    - PSD, phosothop templates for background images
 ```
+
+### Frequently Asked Questions
+**Q**: Where are `psd` templates located?  
+**A**: Templates are located in [`templates`](https://github.com/AdisonCavani/distro-grub-themes/tree/templates) branch
+
+**Q**: How can I edit `psd` template? I don't have Photoshop  
+**A**: You can import `psd` into GIMP, however this might cause to lose some Photoshop related data. I recommend to use [Photopea](https://www.photopea.com/) - free Web Photoshop alternative
