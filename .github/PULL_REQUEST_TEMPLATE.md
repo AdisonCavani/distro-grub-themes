@@ -18,3 +18,4 @@ Please delete options that are not relevant.
 - [ ] My code follows the style guidelines of this project (correct file and folder structure)
 - [ ] The background image for theme is called ``background.png``
 - [ ] ``theme.txt`` has correct *'desktop-image: "background.png"'* attribute
+- [ ] I updated `themes.json` file (JSON database)
