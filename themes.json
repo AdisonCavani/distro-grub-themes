@@ -172,6 +172,12 @@
       "image": "ChromeOS.png",
       "theme": "chromeos.tar",
       "versionAdded": "v2.9"
+    },
+    {
+      "name": "Ultramarine",
+      "image": "Ultramarine.png",
+      "theme": "ultramarine.tar",
+      "versionAdded": "v2.9"
     }
   ],
   "vendors": [
