@@ -184,6 +184,12 @@
       "image": "Alma.png",
       "theme": "alma.tar",
       "versionAdded": "v2.9"
+    },
+    {
+      "name": "Parabola",
+      "image": "Parabola.png",
+      "theme": "parabola.tar",
+      "versionAdded": "v2.9"
     }
   ],
   "vendors": [
