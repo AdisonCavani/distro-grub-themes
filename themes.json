@@ -178,6 +178,12 @@
       "image": "Ultramarine.png",
       "theme": "ultramarine.tar",
       "versionAdded": "v2.9"
+    },
+    {
+      "name": "AlmaLinux",
+      "image": "Alma.png",
+      "theme": "alma.tar",
+      "versionAdded": "v2.9"
     }
   ],
   "vendors": [
