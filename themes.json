@@ -159,37 +159,37 @@
       "name": "NixOS",
       "image": "NixOS.png",
       "theme": "nixos.tar",
-      "versionAdded": "v2.9"
+      "versionAdded": "v3.1"
     },
     {
       "name": "Lubuntu",
       "image": "Lubuntu.png",
       "theme": "lubuntu.tar",
-      "versionAdded": "v2.9"
+      "versionAdded": "v3.1"
     },
     {
       "name": "ChromeOS",
       "image": "ChromeOS.png",
       "theme": "chromeos.tar",
-      "versionAdded": "v2.9"
+      "versionAdded": "v3.1"
     },
     {
       "name": "Ultramarine",
       "image": "Ultramarine.png",
       "theme": "ultramarine.tar",
-      "versionAdded": "v2.9"
+      "versionAdded": "v3.1"
     },
     {
       "name": "AlmaLinux",
       "image": "Alma.png",
       "theme": "alma.tar",
-      "versionAdded": "v2.9"
+      "versionAdded": "v3.1"
     },
     {
       "name": "Parabola",
       "image": "Parabola.png",
       "theme": "parabola.tar",
-      "versionAdded": "v2.9"
+      "versionAdded": "v3.1"
     }
   ],
   "vendors": [
@@ -287,19 +287,19 @@
       "name": "Thinkpad",
       "image": "Thinkpad.png",
       "theme": "thinkpad.tar",
-      "versionAdded": "v2.9"
+      "versionAdded": "v3.1"
     },
     {
       "name": "Samsung",
       "image": "Samsung.png",
       "theme": "samsung.tar",
-      "versionAdded": "v2.9"
+      "versionAdded": "v3.1"
     },
     {
       "name": "LG",
       "image": "LG.png",
       "theme": "lg.tar",
-      "versionAdded": "v2.9"
+      "versionAdded": "v3.1"
     }
   ]
 }
