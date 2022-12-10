@@ -288,6 +288,18 @@
       "image": "Thinkpad.png",
       "theme": "thinkpad.tar",
       "versionAdded": "v2.9"
+    },
+    {
+      "name": "Samsung",
+      "image": "Samsung.png",
+      "theme": "samsung.tar",
+      "versionAdded": "v2.9"
+    },
+    {
+      "name": "LG",
+      "image": "LG.png",
+      "theme": "lg.tar",
+      "versionAdded": "v2.9"
     }
   ]
 }
