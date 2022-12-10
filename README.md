@@ -10,7 +10,7 @@ It aims to replace the default GRUB look, with a nice and colorful theme.
 
 ## Get started
 
-Documentation is available at [adison.me/distro-grub-themes](https://adison.me/distro-grub-themes).  
+Documentation is available at [k1ng.dev/distro-grub-themes](https://k1ng.dev/distro-grub-themes).  
 Raw markdown files are located in [`/docs`](./docs) folder.
 
 ## Funding
