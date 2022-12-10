@@ -154,6 +154,42 @@
       "name": "Zorin OS",
       "image": "ZorinOS.png",
       "theme": "zorinOS.tar"
+    },
+    {
+      "name": "NixOS",
+      "image": "NixOS.png",
+      "theme": "nixos.tar",
+      "versionAdded": "v2.9"
+    },
+    {
+      "name": "Lubuntu",
+      "image": "Lubuntu.png",
+      "theme": "lubuntu.tar",
+      "versionAdded": "v2.9"
+    },
+    {
+      "name": "ChromeOS",
+      "image": "ChromeOS.png",
+      "theme": "chromeos.tar",
+      "versionAdded": "v2.9"
+    },
+    {
+      "name": "Ultramarine",
+      "image": "Ultramarine.png",
+      "theme": "ultramarine.tar",
+      "versionAdded": "v2.9"
+    },
+    {
+      "name": "AlmaLinux",
+      "image": "Alma.png",
+      "theme": "alma.tar",
+      "versionAdded": "v2.9"
+    },
+    {
+      "name": "Parabola",
+      "image": "Parabola.png",
+      "theme": "parabola.tar",
+      "versionAdded": "v2.9"
     }
   ],
   "vendors": [
@@ -180,7 +216,7 @@
     {
       "name": "ASRock",
       "image": "ASRock.png",
-      "theme": ".tar"
+      "theme": "asrock.tar"
     },
     {
       "name": "Dell",
@@ -225,7 +261,7 @@
     {
       "name": "MSI",
       "image": "MSI.png",
-      "theme": ".tar"
+      "theme": "msi.tar"
     },
     {
       "name": "Razer",
@@ -246,6 +282,12 @@
       "name": "Vaio",
       "image": "Vaio.png",
       "theme": "vaio.tar"
+    },
+    {
+      "name": "Thinkpad",
+      "image": "Thinkpad.png",
+      "theme": "thinkpad.tar",
+      "versionAdded": "v2.9"
     }
   ]
 }
