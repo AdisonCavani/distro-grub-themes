@@ -13,12 +13,6 @@ git clone https://github.com/AdisonCavani/distro-grub-themes.git
 
 ### Install GRUB Customizer
 
-> **⚠ WARNING**
-
-> ``grub-customizer`` is not available on Ubuntu 21.10 and above.
-> See [#56](https://github.com/AdisonCavani/distro-grub-themes/issues/56).
-> You should [install it manually](#manual-installation), instead.
-
 <Callout type="warning">
   ``grub-customizer`` is not available on Ubuntu 21.10 and above.  
   See [#56](https://github.com/AdisonCavani/distro-grub-themes/issues/56).  
@@ -39,11 +33,11 @@ pacman
 sudo pacman -S grub-customizer
 ```
 
-> **⚠ WARNING**
-
-> Grub Customizer DOES NOT WORK on recent Fedora releases without extensive modification.
-> [Manually installing](#manual-installation) a GRUB theme is much more secure and hassle free.
-> Use this at your own risk.
+<Callout type="warning">
+  Grub Customizer DOES NOT WORK on recent Fedora releases without extensive modification.  
+  [Manually installing](#manual-installation) a GRUB theme is much more secure and hassle free.  
+  Use this at your own risk.
+</Callout>
 
 dnf
 
@@ -78,15 +72,17 @@ sudo eopkg install grub-customizer
 - Select your archive
 - Save the changes
 
-#### Note:
-KDE Neon's default theme is set in a separate file that overrides any theme changes you make. Run the following to disable the default GRUB theme:
-
-```shell
-sudo rm /etc/default/grub.d/99_breeze-grub.cfg
-sudo update-grub
-```
-
-To revert back to the orignal KDE Neon theme, open GRUB Customizer, and in the Appearance settings tab, change the theme dropdown back to breeze.
+<Callout>
+  KDE Neon's default theme is set in a separate file that overrides any theme changes you make.  
+  Run the following to disable the default GRUB theme:
+  
+  ```shell
+  sudo rm /etc/default/grub.d/99_breeze-grub.cfg
+  sudo update-grub
+  ```
+  
+  To revert back to the orignal KDE Neon theme, open GRUB Customizer, and in the Appearance settings tab, change the theme dropdown back to breeze.
+</Callout>
 
 ## Manual Installation
 
@@ -170,20 +166,22 @@ or
 sudo grub2-mkconfig -o BOOT_GRUB_LOCATION/grub.cfg
 ```
 
-> **⚠ WARNING**
+<Callout type="warning">
+  These commands may not work for you.  
+  Your GRUB config directory may vary depending on your distribution.  
+</Callout>
 
-> These commands may not work for you.
-> Your GRUB config directory may vary depending on your distribution.
-
-#### Note:
-KDE Neon's default theme is set in a separate file that overrides any theme changes you make. Run the following to disable the default GRUB theme:
-
-```shell
-sudo rm /etc/default/grub.d/99_breeze-grub.cfg
-sudo update-grub
-```
-
-To revert back to the orignal KDE Neon theme, set the `GRUB_THEME` value in `/etc/default/grub` to `/boot/grub/themes/breeze/theme.txt`.
+<Callout>
+  KDE Neon's default theme is set in a separate file that overrides any theme changes you make.  
+  Run the following to disable the default GRUB theme:
+  
+  ```shell
+  sudo rm /etc/default/grub.d/99_breeze-grub.cfg
+  sudo update-grub
+  ```
+  
+  To revert back to the orignal KDE Neon theme, set the `GRUB_THEME` value in `/etc/default/grub` to `/boot/grub/themes/breeze/theme.txt`.
+</Callout>
 
 ## Install theme in Ventoy
 
