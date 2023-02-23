@@ -45,16 +45,25 @@ You can track your workflows [here](https://github.com/AdisonCavani/distro-grub-
 **Q**: How can I edit `psd` template? I don't have Photoshop  
 **A**: You can import `psd` into GIMP, however this might cause to lose some Photoshop related data. I recommend to use [Photopea](https://www.photopea.com/) - free web-based Photoshop alternative.
 
-<FAQPageJsonLd
-  useAppDir={true}
-  mainEntity={[
-    {
-      questionName: "Where are psd templates located?",
-      acceptedAnswerText: "Templates are located in <a href='https://github.com/AdisonCavani/distro-grub-themes/tree/templates'>templates branch</a>.",
-    },
-    {
-      questionName: "How can I edit psd template? I don't have Photoshop.",
-      acceptedAnswerText: "You can import psd into GIMP, however this might cause to lose some Photoshop related data. I recommend to use <a href='https://www.photopea.com/'>Photopea</a> - free web-based Photoshop alternative.",
-    },
-  ]}
-/>
+<JsonLd content={
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Where are psd templates located?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Templates are located in &lt;a href=&apos;https://github.com/AdisonCavani/distro-grub-themes/tree/templates&apos;&gt;templates branch&lt;/a&gt;.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How can I edit psd template? I don&apos;t have Photoshop.",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You can import psd into GIMP, however this might cause to lose some Photoshop related data. I recommend to use &lt;a href=&apos;https://www.photopea.com/&apos;&gt;Photopea&lt;/a&gt; - free web-based Photoshop alternative.",
+        },
+      },
+    ],
+    }/>
