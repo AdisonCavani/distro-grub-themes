@@ -36,7 +36,7 @@ terminal-border: "0"
   top = 31%
   align = "center"
   id = "__timeout__"
-  text = "Debian 10 will start in %d seconds"
+  text = "Debian 11 will start in %d seconds"
   color = "#cccccc"
   font = "Ubuntu Regular 17"
 }
