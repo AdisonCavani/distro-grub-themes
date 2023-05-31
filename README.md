@@ -10,8 +10,9 @@ It aims to replace the default GRUB look, with a nice and colorful theme.
 
 ## Get started
 
-Documentation is available at [k1ng.dev/distro-grub-themes](https://k1ng.dev/distro-grub-themes).  
-Raw markdown files are located in [`/docs`](./docs) folder.
+- **Theme preview** is available at [k1ng.dev/distro-grub-themes/preview](https://k1ng.dev/distro-grub-themes/preview).  
+- **Documentation** is available at [k1ng.dev/distro-grub-themes](https://k1ng.dev/distro-grub-themes).  
+- Raw markdown files are located in [`/docs`](./docs) folder.
 
 ## Funding
 I put a lot of effort and my free time into maintaining this project.  
