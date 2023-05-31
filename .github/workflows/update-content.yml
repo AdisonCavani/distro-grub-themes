@@ -13,16 +13,28 @@ jobs:
 
     steps:
       - uses: actions/checkout@master
-      - name: 🖼️	Update icons
+      - name: 📂 Create temp folder
         run: |
-          for dest in customize/* ; do cp -rv assets/icons "$dest"; done
-      - name: 📇 Update fonts
+          mkdir temp
+      - name: 🖼️	Add icons
         run: |
-          for dest in customize/* ; do cp -rva assets/fonts/. "$dest"; done
-      - name: 💼 Update archives
+          for dest in temp/* ; do cp -rv assets/icons "$dest"; done
+      - name: 📇 Add fonts
         run: |
-          cd customize;
+          for dest in temp/* ; do cp -rva assets/fonts/. "$dest"; done
+      - name: 🌿 Add menu
+        run: |
+          for dest in temp/* ; do cp -rva assets/menu/. "$dest"; done
+      - name: 📃 Add theme
+        run: |
+          for dest in temp/* ; do cp -rv assets/theme.txt "$dest"; done
+      - name: 💼 Create archives
+        run: |
+          cd temp;
           for dest in * ; do find "$dest" -printf "%P\n" | tar -vcf ../themes/"$dest".tar --no-recursion -C "$dest" -T -; done
+      - name: Remove artifacts
+        run: |
+          rm -r temp
       - name: 🔥 Commit changes
         run: |
           git config user.name github-actions
