@@ -23,7 +23,7 @@
     {
       "name": "CentOS",
       "image": "CentOS.png",
-      "theme": "centOS.tar"
+      "theme": "centos.tar"
     },
     {
       "name": "Debian",
@@ -38,12 +38,12 @@
     {
       "name": "ElementaryOS",
       "image": "ElementaryOS.png",
-      "theme": "dell.tar"
+      "theme": "elementary.tar"
     },
     {
       "name": "EndeavourOS",
       "image": "EndeavourOS.png",
-      "theme": "endeavourOS.tar"
+      "theme": "endeavouros.tar"
     },
     {
       "name": "Fedora",
@@ -53,7 +53,7 @@
     {
       "name": "FreeBSD",
       "image": "FreeBSD.png",
-      "theme": "freeBSD.tar"
+      "theme": "freebsd.tar"
     },
     {
       "name": "Garuda",
@@ -68,7 +68,7 @@
     {
       "name": "KDE Neon",
       "image": "KDEneon.png",
-      "theme": "kdeNeon.tar"
+      "theme": "kdeneon.tar"
     },
     {
       "name": "Kubuntu",
@@ -93,12 +93,12 @@
     {
       "name": "openSUSE",
       "image": "OpenSUSE.png",
-      "theme": "openSUSE.tar"
+      "theme": "opensuse.tar"
     },
     {
       "name": "Pop!_OS",
       "image": "PopOS.png",
-      "theme": "pop.tar"
+      "theme": "popos.tar"
     },
     {
       "name": "Rocky Linux",
@@ -153,7 +153,7 @@
     {
       "name": "Zorin OS",
       "image": "ZorinOS.png",
-      "theme": "zorinOS.tar"
+      "theme": "zorinos.tar"
     },
     {
       "name": "NixOS",
