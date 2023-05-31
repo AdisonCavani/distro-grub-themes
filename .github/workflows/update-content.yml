@@ -16,7 +16,14 @@ jobs:
       - name: 📂 Create temp folder
         run: |
           mkdir temp
-      - name: 🖼️	Add icons
+      - name: 🖼️ Add backgrounds
+        run: |
+          for file in assets/backgrounds/*.png ; do
+            filename=$(basename "$file" .png)
+            mkdir "temp/$filename"
+            cp "$file" "temp/$filename/background.png"
+          done
+      - name: 🎨 Add icons
         run: |
           for dest in temp/* ; do cp -rv assets/icons "$dest"; done
       - name: 📇 Add fonts
