@@ -35,6 +35,9 @@ jobs:
       - name: 📃 Add theme
         run: |
           for dest in temp/* ; do cp -rv assets/theme.txt "$dest"; done
+      - name: 🗑️ Cleanup old themes
+        run: |
+          rm -rf themes/*
       - name: 💼 Create archives
         run: |
           cd temp;
