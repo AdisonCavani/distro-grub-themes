@@ -32,8 +32,8 @@ body:
     label: Contributing
     multiple: false
     options:
-      - "Yes, I am willing to help implement this feature in a PR"
       - "No, I am afraid I cannot help regarding this"
+      - "Yes, I am willing to help implement this feature in a PR"
   validations:
     required: true
 - type: markdown
