@@ -300,6 +300,12 @@
       "image": "LG.png",
       "theme": "lg.tar",
       "versionAdded": "v3.1"
+    },
+    {
+      "name": "Medion",
+      "image": "Medion.png",
+      "theme": "medion.tar",
+      "versionAdded": "v3.2"
     }
   ]
 }
