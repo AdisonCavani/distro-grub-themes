@@ -28,15 +28,15 @@ body:
   validations:
     required: false
 - type: dropdown
-    attributes:
-      label: Contributing
-      multiple: false
-      options:
-        - "Yes, I am willing to help implement this feature in a PR"
-        - "No, I am afraid I cannot help regarding this"
-    validations:
-      required: true
-  - type: markdown
-    attributes:
-      value: |
-        It takes a lot of work and time maintaining this project; any contribution is welcomed
+  attributes:
+    label: Contributing
+    multiple: false
+    options:
+      - "Yes, I am willing to help implement this feature in a PR"
+      - "No, I am afraid I cannot help regarding this"
+  validations:
+    required: true
+- type: markdown
+  attributes:
+    value: |
+      It takes a lot of work and time maintaining this project; any contribution is welcomed
