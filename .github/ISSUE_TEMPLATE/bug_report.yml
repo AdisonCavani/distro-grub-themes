@@ -28,8 +28,10 @@ body:
     description: |
       examples:
         - **OS**: Ubuntu 20.04
+        - **Resolution**: 1920x1080
     value: |
-        - OS:
+        - OS: 
+        - Resolution: 
     render: markdown
   validations:
     required: false
