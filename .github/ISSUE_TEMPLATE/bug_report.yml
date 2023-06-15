@@ -1,6 +1,6 @@
 name: Issue / bug
 description: File a bug/issue
-title: "[BUG] <title>"
+title: "bug: <title>"
 labels: [bug]
 body:
 - type: checkboxes
