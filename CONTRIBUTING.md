@@ -11,9 +11,11 @@ To get an overview of the project, read the [README](README.md) and [wiki page](
 ```
 .
 ├── assets                       - assets for creating background images
-|   ├── fonts                    - fonts used in each theme
-|   └── icons                    - icons that get copied to icons folder in every theme
-├── customize                    - non-compressed themes
+|   ├── backgrounds              - backgrounds used in each theme
+|   ├── fonts                    - fonts
+|   ├── icons                    - icons
+|   ├── menu                     - menu parts
+|   └── theme.txt                - theme configuration file
 ├── docs                         - documentation markdown files
 ├── preview                      - preview images for README.md
 ├── themes                       - compressed themes ready to install in .tar format
@@ -40,7 +42,7 @@ You can track your workflows [here](https://github.com/AdisonCavani/distro-grub-
 
 ### Frequently Asked Questions
 **Q**: Where are `psd` templates located?  
-**A**: Templates are located in [`templates`](https://github.com/AdisonCavani/distro-grub-themes/tree/templates) branch.
+**A**: Templates are located in [`templates branch`](https://github.com/AdisonCavani/distro-grub-themes/tree/templates).
 
 **Q**: How can I edit `psd` template? I don't have Photoshop  
 **A**: You can import `psd` into GIMP, however this might cause to lose some Photoshop related data. I recommend to use [Photopea](https://www.photopea.com/) - free web-based Photoshop alternative.
