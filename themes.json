@@ -119,32 +119,22 @@
     },
     {
       "name": "Archcraft",
-      "image": "Archcraft.png",
-      "theme": "archcraft.tar",
       "versionAdded": "v3.2"
     },
     {
       "name": "Nobara",
-      "image": "Nobara.png",
-      "theme": "nobara.tar",
       "versionAdded": "v3.2"
     },
     {
       "name": "Proxmox",
-      "image": "Proxmox.png",
-      "theme": "proxmox.tar",
       "versionAdded": "v3.2"
     },
     {
       "name": "Linux Lite",
-      "image": "linuxlite.png",
-      "theme": "linuxlite.tar",
       "versionAdded": "v3.2"
     },
     {
       "name": "Vanilla OS",
-      "image": "VanillaOS.png",
-      "theme": "vanillaos.tar",
       "versionAdded": "v3.2"
     }
   ],
@@ -217,26 +207,18 @@
     },
     {
       "name": "Asus ROG",
-      "image": "AsusROG.png",
-      "theme": "asusrog.tar",
       "versionAdded": "v3.2"
     },
     {
       "name": "Asus TUF",
-      "image": "AsusTUF.png",
-      "theme": "asustuf.tar",
       "versionAdded": "v3.2"
     },
     {
       "name": "HP Victus",
-      "image": "HPVictus.png",
-      "theme": "hpvictus.tar",
       "versionAdded": "v3.2"
     },
     {
       "name": "Medion",
-      "image": "Medion.png",
-      "theme": "medion.tar",
       "versionAdded": "v3.2"
     }
   ]
