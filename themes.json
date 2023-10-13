@@ -185,9 +185,6 @@
       "name": "Razer"
     },
     {
-      "name": "Supermicro"
-    },
-    {
       "name": "System76"
     },
     {
@@ -223,6 +220,10 @@
     {
       "name": "Medion",
       "versionAdded": "v3.2"
-    }
+    },
+    {
+      "name": "Supermicro",
+      "versionAdded": "v3.3"
+    },
   ]
 }
