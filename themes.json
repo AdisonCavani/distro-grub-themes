@@ -220,6 +220,10 @@
     {
       "name": "Medion",
       "versionAdded": "v3.2"
-    }
+    },
+    {
+      "name": "Supermicro",
+      "versionAdded": "v3.3"
+    },
   ]
 }
