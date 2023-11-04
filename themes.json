@@ -161,9 +161,6 @@
       "name": "Framework"
     },
     {
-      "name": "Fujitsu"
-    },
-    {
       "name": "Gigabyte"
     },
     {
@@ -227,6 +224,10 @@
     {
       "name": "Supermicro",
       "versionAdded": "v3.3"
-    }
+    },
+    {
+      "name": "Fujitsu",
+      "versionAdded": "v3.3"
+    },
   ]
 }
