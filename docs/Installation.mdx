@@ -108,15 +108,15 @@ sudo mkdir BOOT_GRUB_LOCATION/themes
 #### Edit or use a pre-made theme
 
 ```shell
-cd distro-grub-themes/customize
+cd distro-grub-themes/themes
 ```
 
 #### Copy theme
 
-The theme must be unpacked inside a folder before you can copy it.
+The theme must be unpacked inside a folder before you can install it.
 
 ```
-sudo cp -r <theme_name>/ BOOT_GRUB_LOCATION/themes
+sudo tar -C BOOT_GRUB_LOCATION/themes/<theme_name> -xf <theme_name>.tar
 ```
 
 #### Edit GRUB config
