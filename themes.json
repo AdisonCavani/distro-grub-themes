@@ -13,9 +13,6 @@
       "name": "Bedrock Linux"
     },
     {
-      "name": "CentOS"
-    },
-    {
       "name": "Debian"
     },
     {
@@ -136,7 +133,11 @@
     {
       "name": "Vanilla OS",
       "versionAdded": "v3.2"
-    }
+    },
+    {
+      "name": "CentOS",
+      "versionAdded": "v3.3"
+    },
   ],
   "vendors": [
     {
