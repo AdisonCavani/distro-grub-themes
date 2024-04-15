@@ -6,6 +6,8 @@ on:
         paths:
           - "./*.nix"
           - ".github/workflows/nix.yml"
+          - "assets/**"
+          - "customize/**"
 jobs:
     flake:
         name: Check flake
