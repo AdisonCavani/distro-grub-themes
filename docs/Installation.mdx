@@ -99,9 +99,8 @@ sudo eopkg install grub-customizer
     ```
 
 ### NixOS module
-To use this theme as a NixOS module, a bare-minimum configuration would be as follows:  
-`flake.nix`:
-```nix
+To use this theme as a NixOS module, a bare-minimum configuration would be as follows:
+```nix:flake.nix
 {
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
@@ -119,8 +118,7 @@ To use this theme as a NixOS module, a bare-minimum configuration would be as fo
 }
 ```
 
-`configuration.nix`:
-```nix
+```nix:configuration.nix 
 { config, pkgs, lib, ... }: {
   distro-grub-themes = {
     enable = true;
@@ -130,9 +128,8 @@ To use this theme as a NixOS module, a bare-minimum configuration would be as fo
 ```
 
 ### Standalone setup
-To use this theme in a standalone setup, a bare-minimum configuration would be as follows:  
-`flake.nix`:
-```nix
+To use this theme in a standalone setup, a bare-minimum configuration would be as follows:
+```nix:flake.nix
 {
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
@@ -148,8 +145,7 @@ To use this theme in a standalone setup, a bare-minimum configuration would be a
   };
 }
 ```
-`configuration.nix`:
-```nix
+```nix:configuration.nix
 { config, pkgs, lib, inputs, ... }: {
   
   boot.loader.grub = rec {
