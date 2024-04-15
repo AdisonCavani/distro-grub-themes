@@ -1,6 +1,11 @@
 name: Check nix packages
 on:
     pull_request:
+      paths:
+        - "./*.nix"
+        - ".github/workflows/nix.yml"
+        - "assets/**"
+        - "customize/**"
     push:
         branches: [master]
         paths:
