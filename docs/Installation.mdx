@@ -139,6 +139,12 @@ To use this theme in a standalone setup, a bare-minimum configuration would be a
   outputs = { self, nixpkgs, ... }@inputs: {
     nixosConfigurations."default" = nixpkgs.lib.nixosSystem rec {
       system = "x86_64-linux";
+
+      specialArgs = {
+        # Pass system and inputs to the configuration.nix file
+        inherit system inputs;
+      };
+
       modules = [
         ./configuration.nix
       ];
@@ -147,7 +153,7 @@ To use this theme in a standalone setup, a bare-minimum configuration would be a
 }
 ```
 ```nix:configuration.nix
-{ config, pkgs, lib, inputs, ... }: {
+{ config, pkgs, lib, inputs, system, ... }: {
   
   boot.loader.grub = rec {
     theme = inputs.distro-grub-themes.packages.${system}.<theme_name>-grub-theme;
