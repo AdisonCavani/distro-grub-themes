@@ -88,8 +88,9 @@ sudo eopkg install grub-customizer
 ### Prerequisites
 - Nix 2.4 or later
 - Experimental features `nix-command` and `flakes` enabled.
-  - You can achive that by adding the following to your `configuration.nix` and rebuilding your system.
-    ```nix
+  - You can achive that by setting the following options and rebuilding your system.
+
+    ```nix:configuration.nix
     nix = {
       package = pkgs.nixFlakes;
       extraOptions = ''
