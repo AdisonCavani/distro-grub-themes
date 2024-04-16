@@ -1,12 +1,12 @@
 { stdenvNoCC, lib, theme }:
 let
-  themes = builtins.map (theme: (builtins.head (lib.strings.splitString "." theme))) (builtins.attrNames (builtins.readDir ./assets/backgrounds));
+  themes = builtins.map (theme: (builtins.head (lib.strings.splitString "." theme))) (builtins.attrNames (builtins.readDir ./../assets/backgrounds));
 in
 assert builtins.any (x: x == theme) themes;
 
 stdenvNoCC.mkDerivation {
   name = "distro-grub-themes";
-  src = ./.;
+  src = ./../.;
 
   installPhase = ''
     mkdir -p $out

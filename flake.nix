@@ -20,20 +20,20 @@
           (theme:
             let name = (builtins.head (pkgs.lib.strings.splitString "." theme)); in {
               name = name + "-grub-theme";
-              value = pkgs.callPackage ./default.nix { theme = name; };
+              value = pkgs.callPackage ./build/default.nix { theme = name; };
             })
           themeNames);
       in
       {
         packages = {
-          default = pkgs.callPackage ./default.nix { theme = "nixos"; };
+          default = pkgs.callPackage ./build/default.nix { theme = "nixos"; };
         } // themePackages;
 
         devShells.default = pkgs.mkShell {
           nativeBuildInputs = with pkgs; [ nixd nixpkgs-fmt act jq ];
         };
 
-        nixosModules.default = ./module.nix;
+        nixosModules.default = ./build/module.nix;
       }
     );
 }

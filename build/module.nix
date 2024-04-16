@@ -2,7 +2,7 @@
 with lib;
 let
   cfg = config.distro-grub-themes;
-  themes = builtins.map (theme: (builtins.head (lib.strings.splitString "." theme))) (builtins.attrNames (builtins.readDir ./assets/backgrounds));
+  themes = builtins.map (theme: (builtins.head (lib.strings.splitString "." theme))) (builtins.attrNames (builtins.readDir ./../assets/backgrounds));
 in
 {
   options.distro-grub-themes = {
