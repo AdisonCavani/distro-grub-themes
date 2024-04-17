@@ -84,6 +84,84 @@ sudo eopkg install grub-customizer
   To revert back to the orignal KDE Neon theme, open GRUB Customizer, and in the Appearance settings tab, change the theme dropdown back to breeze.
 </Callout>
 
+## Installation via Nix Flakes
+### Prerequisites
+- Nix 2.4 or later
+- Experimental features `nix-command` and `flakes` enabled.
+  - You can achive that by setting the following options and rebuilding your system.
+
+    ```nix:configuration.nix
+    nix = {
+      package = pkgs.nixFlakes;
+      extraOptions = ''
+        experimental-features = nix-command flakes
+      '';
+    };
+    ```
+
+### NixOS module
+To use this theme as a NixOS module, a bare-minimum configuration would be as follows:
+```nix:flake.nix
+{
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    distro-grub-themes.url = "github:AdisonCavani/distro-grub-themes";
+  };
+  outputs = { self, nixpkgs, ... }@inputs: {
+    nixosConfigurations."default" = nixpkgs.lib.nixosSystem rec {
+      system = "x86_64-linux";
+      modules = [
+        ./configuration.nix
+        inputs.distro-grub-themes.nixosModules.${system}.default
+      ];
+    };
+  };
+}
+```
+
+```nix:configuration.nix 
+{ config, pkgs, lib, ... }: {
+  distro-grub-themes = {
+    enable = true;
+    theme = "<theme_name>";
+  };
+}
+```
+
+### Standalone setup
+To use this theme in a standalone setup, a bare-minimum configuration would be as follows:
+```nix:flake.nix
+{
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    distro-grub-themes.url = "github:AdisonCavani/distro-grub-themes";
+  };
+  outputs = { self, nixpkgs, ... }@inputs: {
+    nixosConfigurations."default" = nixpkgs.lib.nixosSystem rec {
+      system = "x86_64-linux";
+
+      specialArgs = {
+        # Pass system and inputs to the configuration.nix file
+        inherit system inputs;
+      };
+
+      modules = [
+        ./configuration.nix
+      ];
+    };
+  };
+}
+```
+```nix:configuration.nix
+{ config, pkgs, lib, inputs, system, ... }: {
+  
+  boot.loader.grub = rec {
+    theme = inputs.distro-grub-themes.packages.${system}.<theme_name>-grub-theme;
+    splashImage = "${theme}/splash_image.jpg";
+  };
+}
+```
+
 ## Manual Installation
 
 In order to clone the repository from GitHub, you have to install Git, via the `git` package.  

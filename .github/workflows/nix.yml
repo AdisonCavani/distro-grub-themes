@@ -1,0 +1,57 @@
+name: Check nix packages
+on:
+    pull_request:
+      paths:
+        - "./*.nix"
+        - ".github/workflows/nix.yml"
+        - "assets/**"
+        - "customize/**"
+    push:
+        branches: [master]
+        paths:
+          - "./*.nix"
+          - ".github/workflows/nix.yml"
+          - "assets/**"
+          - "customize/**"
+jobs:
+    flake:
+        name: Check flake
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - name: Check Nix flake inputs
+              uses: DeterminateSystems/flake-checker-action@v5
+              with:
+                send-statistics: false
+                fail-mode: true
+            - name: Install Nix
+              uses: DeterminateSystems/nix-installer-action@v9
+            - name: Check repository
+              run: nix flake check
+    matrix:
+        name: Generate build matrix
+        runs-on: ubuntu-latest
+        outputs:
+            themes: ${{ steps.generate-matrix.outputs.themes }}
+        steps:
+            - uses: actions/checkout@v4
+            - name: Generate matrix
+              id: generate-matrix
+              run: |
+                THEMES=$(ls assets/backgrounds/ | sed 's/\.png$//g' | jq --raw-input | jq --slurp -c)
+                echo "themes=$THEMES" >> $GITHUB_OUTPUT
+    build:
+        name: Check nix build for theme ${{ matrix.theme }}
+        runs-on: ubuntu-latest
+        needs:
+            - matrix
+        strategy:
+            matrix: 
+                theme: ${{ fromJSON(needs.matrix.outputs.themes) }}
+        steps:
+            - uses: actions/checkout@v4
+            - name: Install Nix
+              uses: DeterminateSystems/nix-installer-action@v9
+            - name: Build package
+              run: nix build .#${{ matrix.theme }}-grub-theme
+
