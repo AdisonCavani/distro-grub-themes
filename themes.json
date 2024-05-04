@@ -168,9 +168,6 @@
       "name": "HP"
     },
     {
-      "name": "HP Omen"
-    },
-    {
       "name": "Huawei"
     },
     {
@@ -231,6 +228,10 @@
     },
     {
       "name": "Fujitsu",
+      "versionAdded": "v3.3"
+    },
+    {
+      "name": "HP Omen"
       "versionAdded": "v3.3"
     }
   ]
