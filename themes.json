@@ -229,6 +229,10 @@
     {
       "name": "Fujitsu",
       "versionAdded": "v3.3"
+    },
+    {
+      "name": "HP Omen",
+      "versionAdded": "v3.3"
     }
   ]
 }
