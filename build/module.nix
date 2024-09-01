@@ -1,4 +1,4 @@
-{ pks, lib, config, ... }:
+{ pkgs, lib, config, ... }:
 with lib;
 let
   cfg = config.distro-grub-themes;
@@ -22,7 +22,7 @@ in
     {
       boot.loader.grub = {
         theme = pkgs.callPackage ./default.nix { theme = cfg.theme; };
-        splashImage = ./assets/splash_image.jpg;
+        splashImage = ./../assets/splash_image.jpg;
       };
     };
 }
