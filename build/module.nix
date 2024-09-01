@@ -1,4 +1,4 @@
-{ pks, lib, config, ... }:
+{ pkgs, lib, config, ... }:
 with lib;
 let
   cfg = config.distro-grub-themes;
