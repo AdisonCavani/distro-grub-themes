@@ -8,6 +8,9 @@
 A pack of GRUB2 themes for different Linux distributions and OSs.<br>
 It aims to replace the default GRUB look, with a nice and colorful theme.
 
+> [!NOTE]  
+> Due to lack of free time, the project is in a read-only state.  
+
 ## Get started
 
 - **Theme preview** is available at [k1ng.dev/distro-grub-themes/preview](https://k1ng.dev/distro-grub-themes/preview).  
